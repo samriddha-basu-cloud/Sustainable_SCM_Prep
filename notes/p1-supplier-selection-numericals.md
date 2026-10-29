@@ -3,7 +3,7 @@ This page covers **CO2: weighted scoring of suppliers**, the numerical your facu
 
 Theory is on [Sustainable Procurement & Supplier Selection](ch03-sustainable-procurement.md).
 
-> **Exam weightage reminder (Lecture 11, last slide 📘):** the 40-mark end-sem paper weights **CO3 and CO4 high, CO2 and CO5 medium, CO1 and CO6 low**. Expect one full CO2 numerical with theory/interpretation sub-parts.
+> **Exam marks (as your teacher announced):** the 40-mark end-sem paper has **CO3 and CO4 at 10 marks each, CO2 and CO5 at 7 marks each, CO1 and CO6 at 3 marks each**. Expect one 7-mark CO2 numerical (exam-format versions: [CO2 7-markers](e3-co2-supplier-7-markers.md)) with theory/interpretation sub-parts.
 
 ---
 

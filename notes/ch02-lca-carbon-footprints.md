@@ -1,5 +1,5 @@
 # Environmental LCA, Carbon Footprints & Carbon Management
-Syllabus topic 2 📘 (Lecture 4 LCA Fundamentals, Lecture 5 LCSA, and the deck "Carbon management, carbon accounting and carbon trading"). This chapter is the theory behind **CO3 (carbon accounting)**, one of the two **high-weightage** COs. The numericals are on [Carbon Accounting Numericals](p2-carbon-accounting-numericals.md) and [LCA & Energy Numericals](p5-lca-energy-numericals.md). Expect theory sub-parts such as "explain the four phases of LCA", "carbon footprint vs LCA", "net zero vs carbon neutral", "what is MRV" and "explain Scope 3".
+Syllabus topic 2 📘 (Lecture 4 LCA Fundamentals, Lecture 5 LCSA, and the deck "Carbon management, carbon accounting and carbon trading"). This chapter is the theory behind **CO3 (carbon accounting)**, the **10-mark** carbon accounting numerical. The numericals are on [Carbon Accounting Numericals](p2-carbon-accounting-numericals.md) and [LCA & Energy Numericals](p5-lca-energy-numericals.md). Expect theory sub-parts such as "explain the four phases of LCA", "carbon footprint vs LCA", "net zero vs carbon neutral", "what is MRV" and "explain Scope 3".
 
 ---
 

@@ -160,7 +160,7 @@
   $("scrim").addEventListener("click", function () { setMenu(false); });
   $("nav").addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
   function syncTabbar() {
-    var tab = currentRoute === "home" ? "home" : currentRoute === "quiz" ? "quiz" : currentRoute === "saved" ? "saved" : "";
+    var tab = currentRoute === "home" ? "home" : currentRoute === "quiz" ? "quiz" : currentRoute === "saved" ? "saved" : (bySlug[currentRoute] && bySlug[currentRoute].group === "exam") ? "exam" : "";
     document.querySelectorAll("#tabbar [data-tab]").forEach(function (t) {
       if (t.dataset.tab === "menu" || t.dataset.tab === "search") return;
       t.classList.toggle("active", t.dataset.tab === tab);
@@ -299,7 +299,7 @@
   // ---------------------------------------------------------------------------
   // Navigation
   // ---------------------------------------------------------------------------
-  var GROUPS = [["start", "Start"], ["focus", "Numericals & problems"], ["chapters", "Topics"], ["practice", "Practice"]];
+  var GROUPS = [["start", "Start"], ["exam", "Exam Focus · teacher's pattern"], ["focus", "Numericals & problems"], ["chapters", "Topics"], ["practice", "Practice"]];
   var currentRoute = "";
   function navLink(href, tag, label, slug, count) {
     var active = currentRoute === href.slice(2);
@@ -311,7 +311,7 @@
   function renderNav() {
     var html = "";
     GROUPS.forEach(function (g) {
-      html += '<div class="nav-group"><div class="nav-group-title">' + g[1] + "</div>";
+      html += '<div class="nav-group' + (g[0] === "exam" ? " nav-exam" : "") + '"><div class="nav-group-title">' + g[1] + "</div>";
       if (g[0] === "start") html += navLink("#/home", "⌂", "Home");
       NOTES.filter(function (n) { return n.group === g[0]; }).forEach(function (n) { html += navLink("#/" + n.slug, n.tag, n.label, n.slug); });
       if (g[0] === "practice") {
@@ -345,6 +345,16 @@
       return '<a class="card glass' + (done[n.slug] ? " done" : "") + '" href="#/' + n.slug + '"><span class="k">CH ' + esc(n.tag) + '</span><span class="t">' + esc(n.label) +
         '</span><span class="foot"><span>' + readMins(n.md) + ' min read</span><span class="chk">' + (done[n.slug] ? "✓ done" : "") + "</span></span></a>";
     }).join("");
+    var exam = NOTES.filter(function (n) { return n.group === "exam"; }).map(function (n) {
+      var m = { "40": "PLAN", "10M": "10 MARKS", "7M": "7 MARKS", "3M": "3 MARKS" }[n.tag] || n.tag;
+      var d = { "exam-focus": "The 40-mark paper, time split, answer template and the ten numbers to memorise.",
+        "e1-co3-carbon-10-markers": "Five 10-mark Scope 1-2-3 questions with marks split and model answers.",
+        "e2-co4-network-10-markers": "Six 10-mark network design questions: carbon price, location, mode, DCs, returns.",
+        "e3-co2-supplier-7-markers": "Six 7-mark supplier selection questions: weighted score, TOPSIS, gate + score, TCO.",
+        "e4-co5-performance-7-markers": "Six 7-mark KPI questions: OTIF, OEE, dashboards, scorecards, TAS, benchmarking.",
+        "e5-co1-co6-3-markers": "34 short theory answers in 3-mark length for Lectures 1–3, 9 and 11." }[n.slug] || "";
+      return '<a class="card glass exam-card' + (done[n.slug] ? " done" : "") + '" href="#/' + n.slug + '"><span class="k">' + esc(m) + '</span><span class="t">' + esc(n.label) + '</span><span class="d">' + esc(d) + "</span></a>";
+    }).join("");
     var practice = [
       ["#/p2-carbon-accounting-numericals", "CO3", "Carbon Accounting Numericals", "Scope 1, 2, 3 for the ICEV + EV plant, GWPs, inventories, BRSR, credits."],
       ["#/p3-network-logistics-numericals", "CO4", "Network & Logistics Numericals", "Networks A/B/C, returns allocation, FMCG fleet, distance criteria, DC count."],
@@ -373,11 +383,12 @@
       '<section class="hero"><span class="eyebrow">MBA OM 2025–27 · End-sem</span>' +
       '<h1>Sustainable<br><span class="grad-text">Supply Chain</span></h1>' +
       "<p>In-depth end-sem notes for all ten syllabus topics of Sustainable Supply Chain Management, with the numericals that carry the marks: supplier weighted scoring (CO2), Scope 1-2-3 carbon accounting (CO3), distribution networks, logistics cost and distance criteria (CO4) and performance measurement systems (CO5). Every numerical from the course slides is solved in full, with extra practice problems.</p>" +
-      '<div class="hero-actions"><a class="btn primary" href="#/p2-carbon-accounting-numericals">Numericals →</a><a class="btn" href="#/' + chapters[0].slug + '">Start reading</a>' +
+      '<div class="hero-actions"><a class="btn primary" href="#/exam-focus">Exam focus →</a><a class="btn" href="#/p2-carbon-accounting-numericals">Numericals</a><a class="btn" href="#/' + chapters[0].slug + '">Start reading</a>' +
       '<a class="btn" href="#/rapid-revision">Rapid revision</a><a class="btn" href="#/quiz">Take a quiz</a></div>' + resume +
       '<div class="stats"><div class="stat glass"><b>' + doneCh + "<small>/" + chapters.length + '</small></b><span>Topics done</span></div><div class="stat glass"><b>' + GLOSSARY.length +
       '</b><span>Definitions</span></div><div class="stat glass"><b>' + qaTotal + '</b><span>Q&amp;A cards</span></div><div class="stat glass"><b>' + (best ? best + "<small>/10</small>" : "–") +
       "</b><span>Best quiz score</span></div></div></section>" +
+      '<div class="section-title"><h2>Exam Focus</h2><span>CO3 + CO4 10 marks · CO2 + CO5 7 marks · CO1 + CO6 3 marks</span></div><div class="cards">' + exam + "</div>" +
       '<div class="section-title"><h2>High-yield for the exam</h2><span>your important topics</span></div><div class="cards">' + hy + "</div>" +
       '<div class="section-title"><h2>Topics</h2><span>' + doneCh + "/" + chapters.length + ' done</span></div><div class="cards">' + ch + "</div>" +
       '<div class="section-title"><h2>Practice</h2><span>test yourself</span></div><div class="cards">' + practice + "</div>";

@@ -1,5 +1,5 @@
 # Defining SSCM & Its Impact on Business Performance
-Syllabus topic 1 📘 (Lectures 1, 2 and 3). This is mainly **CO1**, which carries **low weightage** and appears as **3-mark short theory questions** in the end-sem paper. Expect "define", "differentiate", "list with examples" and "why does it matter" questions. Every answer below is written so that you can reproduce it in 5–8 lines. The strategy and stakeholder parts also feed CO6 (strategy) and the scorecard parts feed CO5 ([Performance Measurement Numericals](p4-performance-measurement-numericals.md)).
+Syllabus topic 1 📘 (Lectures 1, 2 and 3). This is mainly **CO1**, which carries **3 marks** and appears as a **short theory question** in the end-sem paper. Expect "define", "differentiate", "list with examples" and "why does it matter" questions. Every answer below is written so that you can reproduce it in 5–8 lines. The strategy and stakeholder parts also feed CO6 (strategy) and the scorecard parts feed CO5 ([Performance Measurement Numericals](p4-performance-measurement-numericals.md)).
 
 ---
 

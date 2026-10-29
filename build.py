@@ -14,6 +14,12 @@ ORDER = [
     # (slug, sidebar label, tag, group)
     ("README", "About these notes & syllabus", "", "start"),
     ("rapid-revision", "Rapid Revision", "★", "start"),
+    ("exam-focus", "Exam Focus: 40-mark plan", "40", "exam"),
+    ("e1-co3-carbon-10-markers", "CO3 Carbon Accounting", "10M", "exam"),
+    ("e2-co4-network-10-markers", "CO4 Network Design", "10M", "exam"),
+    ("e3-co2-supplier-7-markers", "CO2 Supplier Selection", "7M", "exam"),
+    ("e4-co5-performance-7-markers", "CO5 Performance Measurement", "7M", "exam"),
+    ("e5-co1-co6-3-markers", "CO1 & CO6 Theory", "3M", "exam"),
     ("p1-supplier-selection-numericals", "CO2 Supplier Weighted Scoring", "P1", "focus"),
     ("p2-carbon-accounting-numericals", "CO3 Carbon Accounting (Scope 1-2-3)", "P2", "focus"),
     ("p3-network-logistics-numericals", "CO4 Networks, Logistics Cost & Distance", "P3", "focus"),

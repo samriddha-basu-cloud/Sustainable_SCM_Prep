@@ -16,23 +16,23 @@ In-depth notes for the **Sustainable Supply Chain Management (SSCM)** end-semest
 | 10 | **SSCM best practices** | Lecture 11; McKinsey; ITC eChoupal | [SSCM Best Practices](ch10-sscm-best-practices.md) | [Case Studies](case-studies.md) |
 
 ## What the exam asks (as announced) ⭐⭐⭐
-| CO | What to expect | Weightage | Where to practise |
+| CO | What to expect | Marks (teacher's pattern) | Where to practise |
 |---|---|---|---|
-| **CO1** | 3-mark short theory: SSCM, TBL, strategy, business performance | Low | [Ch 1](ch01-sscm-business-performance.md), [Q&A Bank](exam-questions-qna.md) |
-| **CO2** | **Numerical: weighted scoring of suppliers** (+ scorecard, TOPSIS, risk matrix, interpretation) | Medium | [P1 Supplier Selection](p1-supplier-selection-numericals.md) |
-| **CO3** | **Numerical: carbon accounting, Scope 1, 2, 3** (+ GWP, credits, net zero) | **High** | [P2 Carbon Accounting](p2-carbon-accounting-numericals.md) |
-| **CO4** | **Numerical: SSCM distribution networks, logistics cost, distance criteria** | **High** | [P3 Network & Logistics](p3-network-logistics-numericals.md) |
-| **CO5** | **Numerical: effective performance measurement systems** (KPIs, OEE, dashboards, TAS) | Medium | [P4 Performance Measurement](p4-performance-measurement-numericals.md) |
-| **CO6** | 3-mark short theory: technology, quality, best practices, future transitions | Low | [Ch 5](ch05-technology-quality-tools.md), [Ch 10](ch10-sscm-best-practices.md) |
+| **CO1** | 3-mark short theory: SSCM, TBL, strategy, business performance | **3** | [Ch 1](ch01-sscm-business-performance.md), [Q&A Bank](exam-questions-qna.md) |
+| **CO2** | **Numerical: weighted scoring of suppliers** (+ scorecard, TOPSIS, risk matrix, interpretation) | **7** | [P1 Supplier Selection](p1-supplier-selection-numericals.md) |
+| **CO3** | **Numerical: carbon accounting, Scope 1, 2, 3** (+ GWP, credits, net zero) | **10** | [P2 Carbon Accounting](p2-carbon-accounting-numericals.md) |
+| **CO4** | **Numerical: SSCM network design** (distribution networks, logistics cost, distance criteria) | **10** | [P3 Network & Logistics](p3-network-logistics-numericals.md) |
+| **CO5** | **Numerical: effective performance measurement systems** (KPIs, OEE, dashboards, TAS) | **7** | [P4 Performance Measurement](p4-performance-measurement-numericals.md) |
+| **CO6** | 3-mark short theory: technology, quality, best practices, future transitions | **3** | [Ch 5](ch05-technology-quality-tools.md), [Ch 10](ch10-sscm-best-practices.md) |
 
-- **End-sem**: 40 marks, pen and paper, whole syllabus including cases. CO2–CO5 are mainly numericals, with theory, interpretation and application sub-questions inside them.
+- **End-sem**: 40 marks, pen and paper = CO3 10 + CO4 10 + CO2 7 + CO5 7 + CO1 3 + CO6 3. The **[Exam Focus](exam-focus.md)** tab has questions in exactly this format with marks splits and model answers. CO2–CO5 are mainly numericals, with theory, interpretation and application sub-questions inside them.
 - **Online quiz (OLT)**: 20 marks of MCQs on **CO5 and CO6**, from **PPTs 9, 10 and 11 only** (Lecture 11) 📘. The [MCQ Bank](mcq-bank.md) has Q1–Q120 on exactly those three lectures.
 
 ## About the numericals ⭐⭐⭐
 Every numerical that appears in the slides is reproduced as the **exact problem from the zip**: the Lecture 6 weighted-score model and VoltTech scorecard, TOPSIS and the risk matrix; the carbon deck's ICEV + EV plant (Scopes 1, 2, 3); the Lecture 8 network A/B/C and the 10,000-returns allocation; the Lecture 10 FMCG distribution network; the Lecture 3 dashboard; and the Lecture 9 TAS / Navya exercise. Each comes with a full worked answer. The slides give the questions but rarely the answers. Where a slide's own arithmetic is inconsistent (the VoltTech band, the TOPSIS ranks, the carbon-credit ranges), the page says so and shows the correct working. Each page then adds **practice problems** (📗) in the same style, with answers hidden under Self-test. Where a question cannot be solved without an assumption, the assumption is written in **bold** before the working. Do the same in the exam: **state the assumption, show the formula, show the substitution, box the answer, interpret it in one line, and recommend.**
 
 ## How to use this site
-- **Start** with [Rapid Revision](rapid-revision.md): every formula, list and number on one page.
+- **Start** with the **[Exam Focus](exam-focus.md)** tab (questions in the teacher's 10 / 7 / 3-mark format), then [Rapid Revision](rapid-revision.md): every formula, list and number on one page.
 - For each CO, read the **theory page**, then attempt the **numericals page** with **Self-test** on (press `T`). Answers stay hidden until you reveal them.
 - Use the **[Exam Q&A Bank](exam-questions-qna.md)** for 3-mark and long answers, the **[MCQ Bank](mcq-bank.md)** for the quiz, the **[Case Studies](case-studies.md)** for examples to quote, and the **[Glossary](glossary.md)**, Flashcards and Quiz for terms.
 - ⭐⭐⭐ = high-yield, ⭐⭐ = important, ⭐ = good to know.

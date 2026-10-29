@@ -5,8 +5,7 @@ The night-before sheet: every formula, list and headline number from the ten syl
 
 ## 0. Exam pattern (Lecture 11) 📘 ⭐⭐⭐
 - **Quiz (OLT), 20 marks**: MCQs on **CO5 + CO6**, from **PPTs 9, 10 and 11 only** → drill the [MCQ Bank](mcq-bank.md) Q1–Q120.
-- **End-sem, 40 marks**, pen and paper, full syllabus including cases.
-- **Weightage**: CO3 and CO4 **high**; CO2 and CO5 **medium**; CO1 and CO6 **low** (3-mark theory questions).
+- **End-sem, 40 marks**, pen and paper: **CO3 10 + CO4 10** (carbon accounting, network design numericals) · **CO2 7 + CO5 7** (supplier selection, performance measurement numericals) · **CO1 3 + CO6 3** (theory). Practise in the [Exam Focus](exam-focus.md) tab.
 - **Answer recipe for every numerical**: state assumptions → formula → substitution → boxed answer with units → one-line interpretation → one managerial recommendation.
 
 ## 1. CO2 — Weighted scoring of suppliers ⭐⭐⭐ ([P1](p1-supplier-selection-numericals.md))

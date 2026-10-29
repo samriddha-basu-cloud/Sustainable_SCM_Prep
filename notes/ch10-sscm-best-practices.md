@@ -1,5 +1,5 @@
 # SSCM Best Practices & Future Strategies
-Syllabus topic 10 📘 (Lecture 11: "Developing SSCM strategies — understanding contemporary challenges and future sustainability transitions", plus the best-practice cases spread across Lectures 1–10). This is mainly **CO6** (low weightage, 3-mark theory questions) and is part of the **20-mark online quiz** (PPTs 9, 10, 11). Learn the lists, the frameworks and the one-line "key messages" — quiz MCQs are built from them.
+Syllabus topic 10 📘 (Lecture 11: "Developing SSCM strategies — understanding contemporary challenges and future sustainability transitions", plus the best-practice cases spread across Lectures 1–10). This is mainly **CO6** (a 3-mark theory question) and is part of the **20-mark online quiz** (PPTs 9, 10, 11). Learn the lists, the frameworks and the one-line "key messages" — quiz MCQs are built from them.
 
 **Opening question (Lecture 11)** 📘: *"If a supply chain is cheap, fast and reliable, but creates excessive carbon emissions, resource depletion or human-rights risks, is it actually a good supply chain?"* **Sustainability is no longer an add-on to SCM; it is becoming a fundamental design constraint.**
 

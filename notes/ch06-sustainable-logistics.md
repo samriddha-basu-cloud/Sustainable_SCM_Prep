@@ -1,5 +1,5 @@
 # Sustainable Logistics & Its Impact on Business Performance
-Syllabus topic 6 📘 (Lecture 8 Sections B and C: green logistics and reverse logistics; Lecture 10 FMCG distribution KPIs; Lecture 11 Strategy 4; Hindustan Zinc, Flipkart and DHL cases). It is the theory behind **CO4 (logistics cost and distance criteria)**, a **high-weightage** CO. Numericals: [Network & Logistics Numericals](p3-network-logistics-numericals.md). Network design itself is in [Designing the Sustainable Network](ch07-network-design.md).
+Syllabus topic 6 📘 (Lecture 8 Sections B and C: green logistics and reverse logistics; Lecture 10 FMCG distribution KPIs; Lecture 11 Strategy 4; Hindustan Zinc, Flipkart and DHL cases). It is the theory behind **CO4 (logistics cost and distance criteria)**, the **10-mark** network design numerical. Numericals: [Network & Logistics Numericals](p3-network-logistics-numericals.md). Network design itself is in [Designing the Sustainable Network](ch07-network-design.md).
 
 ---
 

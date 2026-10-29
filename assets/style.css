@@ -582,7 +582,7 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
 
   .tabbar {
     position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom)); z-index: 70; height: var(--tab-h);
-    display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; border-radius: 20px; padding: 0 6px;
+    display: grid; grid-template-columns: repeat(6, 1fr); align-items: center; border-radius: 20px; padding: 0 6px;
     background: var(--glass-strong);
   }
   .tabbar a, .tabbar button {
@@ -648,3 +648,8 @@ body.modal-open { overflow: hidden; }
 /* The popover sits inside the blurred header, where a second backdrop blur can't apply, so it needs a denser fill. */
 .popover { background: rgba(14, 17, 25, 0.96); }
 [data-theme="light"] .popover { background: rgba(255, 255, 255, 0.97); }
+
+/* Exam Focus tab */
+.nav-group.nav-exam { border: 1px solid color-mix(in srgb, var(--a1) 35%, transparent); border-radius: 14px; padding: 6px 4px 4px; margin: 4px 0 10px; background: color-mix(in srgb, var(--a1) 6%, transparent); }
+.nav-group.nav-exam .nav-group-title { color: var(--a1); }
+.exam-card { border-color: color-mix(in srgb, var(--a1) 35%, transparent); }
