@@ -15,7 +15,7 @@ The night-before sheet: every formula, list and headline number from the ten syl
 - **Lecture 6 example (slide 24)**: weights Price 25, Quality 20, Delivery 15, Carbon 15, Safety 10, Innovation 10, Compliance 5 → **A 8.10, B 7.70, C 8.15 → C wins** (C > A > B).
 - **VoltTech scorecard**: 0.25×88 + 0.20×90 + 0.15×85 + 0.15×80 + 0.10×92 + 0.10×78 + 0.05×95 = **86.50 → B (Good)** on the 90/75/60 bands (slide's "86.2 A" is inconsistent). Weak: innovation 78, carbon 80.
 - **Lecture 10 supplier scorecard** weights: cost 20, quality 20, delivery 15, environment 15, labour & HR 10, carbon 10, governance 5, innovation 5. X (labour 10) = **72.75**, Y = **81.25**.
-- **TOPSIS**: vector-normalise rᵢⱼ = xᵢⱼ ÷ √Σx² → weight → ideal A⁺ / anti-ideal A⁻ (max for benefit, min for cost) → S⁺, S⁻ (Euclidean) → **Cᵢ* = S⁻ ÷ (S⁺ + S⁻)** → rank high to low. Construction case: **C wins** (slide Cᵢ* 0.608 > A 0.382 > B 0.251 > D 0.106).
+- **TOPSIS** (background only, not in the exam): vector-normalise rᵢⱼ = xᵢⱼ ÷ √Σx² → weight → ideal A⁺ / anti-ideal A⁻ (max for benefit, min for cost) → S⁺, S⁻ (Euclidean) → **Cᵢ* = S⁻ ÷ (S⁺ + S⁻)** → rank high to low. Construction case: **C wins** (slide Cᵢ* 0.608 > A 0.382 > B 0.251 > D 0.106).
 - **Risk matrix**: Likelihood × Impact (1–5): **High 15–24 (25 extreme), Medium 6–14, Low 1–5**. Agri-food: A 4×4 = 16 high, B 3×3 = 9 medium, C 2×2 = 4 low.
 - **AHP**: pairwise 1–9 scale → normalise columns → row averages = weights → **CR = CI ÷ RI < 0.10**, CI = (λmax − n) ÷ (n − 1).
 - **Kraljic**: profit impact × supply risk → **Strategic** (partner), **Bottleneck** (secure supply), **Leverage** (compete), **Routine/non-critical** (simplify).

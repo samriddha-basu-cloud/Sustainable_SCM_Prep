@@ -1,11 +1,14 @@
 # Exam Q&A Bank — Short and Long Theory Answers
+
+> 🎯 marks questions that match the teacher's announced pattern: **CO1 and CO6 are 3-mark theory questions** (every question in those two sections), and the 🎯 interpretation questions are the kind of sub-part that closes a CO2–CO5 numerical. Exam-format practice: [Exam Focus](exam-focus.md) · [CO1 & CO6 3-markers](e5-co1-co6-3-markers.md).
+
 The end-sem paper (40 marks) mixes numericals with **theory interpretation and application sub-questions**, and **CO1 and CO6 are asked as 3-mark short theory questions** 📘. This bank gives model answers sized for the marks. Numericals are on the five problem pages. Turn on **Self-test** (`T`) to hide answers.
 
 **How to write a 3-mark answer**: one-line definition → 3–4 points or a mini-table → one example (Indian if possible) → one-line conclusion. About 6–8 lines.
 
 ---
 
-## CO1 — SSCM fundamentals and business performance (3 marks each)
+## CO1 — SSCM fundamentals and business performance (3 marks each) 🎯
 
 **Q1. Define Sustainable Supply Chain Management. How does it differ from traditional SCM?**
 SSCM manages material, information and money flows and co-operation across the chain while integrating economic, environmental and social goals from stakeholder requirements (Seuring & Müller 2008). Differences: objective (cost/efficiency → balanced TBL value), horizon (short → long term), flow (linear "cradle to grave" → circular "cradle to cradle"), suppliers (price-based → development-based), metrics (cost, speed, quality → plus carbon, water, waste, human rights, resilience), scope (own facilities → full value chain/Scope 3). Example: ITC eChoupal.
@@ -54,7 +57,7 @@ Quality (defect PPM, returns, warranty, Six Sigma level), Delivery (OTD, cycle t
 
 ---
 
-## CO6 — Technology trade-offs and SSCM strategies (3 marks each)
+## CO6 — Technology trade-offs and SSCM strategies (3 marks each) 🎯
 
 **Q16. "Technology ≠ sustainability." Explain.**
 Technology can cut transport emissions, inventory and waste and improve safety and traceability, but it can raise energy use, e-waste, capital outlay, cyber risk and digital-infrastructure CO₂. The link technology → operational performance → sustainability is not linear; potential ≠ realised benefit.
@@ -123,31 +126,31 @@ Defects → rework → extra materials and energy → extra transport → extra 
 
 ## Theory sub-questions for CO2–CO5 (interpretation and application)
 
-**Q37. (CO2) Why should weighted supplier scoring be followed by sensitivity analysis?**
+**Q37. 🎯 (CO2) Why should weighted supplier scoring be followed by sensitivity analysis?**
 Weights are subjective; if a small change in weights reverses the ranking, the decision is fragile. Sensitivity shows the weight range in which a supplier stays best (e.g. Lecture 6's model: raising quality weight to 30% switches the winner from C to A), and supports negotiation and supplier development targets.
 
-**Q38. (CO2) Compare weighted scoring, AHP and TOPSIS.**
+**Q38. (CO2, background: TOPSIS is not in the exam) Compare weighted scoring, AHP and TOPSIS.**
 Weighted scoring: simple, transparent; subjective weights; compensatory. AHP: derives weights from pairwise comparisons on a 1–9 scale with a consistency ratio (CR < 0.10); good when criteria importance is disputed. TOPSIS: ranks by closeness to the ideal and distance from the anti-ideal after vector normalisation; handles many quantitative criteria. All are compensatory, so add knock-out rules for human-rights or safety failures.
 
-**Q39. (CO2) Supplier A is 12% cheaper but has child-labour allegations. What do you do?**
+**Q39. 🎯 (CO2) Supplier A is 12% cheaper but has child-labour allegations. What do you do?**
 Do not select on price. Apply a knock-out/minimum-threshold rule for human rights, compute TCO including reputational and legal risk (CSDDD, customer audits), prefer Supplier B (RE, ISO 14001, zero human-rights issues), and if A is strategic, require a time-bound corrective plan with third-party audits before any award.
 
 **Q40. (CO3) What is MRV and why is it vital for CBAM exporters?**
 Measure (activity data: kWh, litres, m³, production), Report (BRSR, CBAM filings, CDP), Verify (internal audit, third-party assurance by bodies like Bureau Veritas, TÜV). Verified embedded emissions avoid punitive default values under CBAM and build investor trust.
 
-**Q41. (CO3) Why can Scope 1 fall while the total footprint rises?**
+**Q41. 🎯 (CO3) Why can Scope 1 fall while the total footprint rises?**
 Firms outsource energy-intensive steps, buy more carbon-intensive inputs or sell more high-use-phase products; Scope 3 rises faster than Scope 1 falls. Hence "carbon accounting must follow the value chain".
 
-**Q42. (CO3) Interpret: a plant's Scope 1 + 2 is 1.1% of its total emissions (ICEV + EV case).**
+**Q42. 🎯 (CO3) Interpret: a plant's Scope 1 + 2 is 1.1% of its total emissions (ICEV + EV case).**
 Plant energy projects alone cannot materially decarbonise the company; the levers are product use (efficiency, EV share, clean grid), purchased materials (green steel, aluminium, battery chemistry) and end-of-life. That is why Toyota and Tesla focus on supplier decarbonisation, RE, battery recycling and green logistics.
 
-**Q43. (CO3) Location-based vs market-based Scope 2?**
+**Q43. 🎯 (CO3) Location-based vs market-based Scope 2?**
 Location-based uses the average grid factor of where electricity is consumed; market-based uses the factor of contracts bought (PPAs, RECs, green tariffs). Report both; market-based shows the effect of procurement choices (e.g. Tata Motors' iREC-based Scope 2).
 
-**Q44. (CO4) Why is the cheapest network not necessarily the best sustainable network?**
+**Q44. 🎯 (CO4) Why is the cheapest network not necessarily the best sustainable network?**
 Cost-minimal networks may have long distances, high CO₂, low recovery and fragile single sources. With a carbon price (λ) or recovery value (μ) in the objective, a dearer network (e.g. Network C, ₹115, 55 CO₂, 70% recovery) becomes optimal above λ ≈ 0.35. Decision-maker priorities and Pareto efficiency define "best".
 
-**Q45. (CO4) Interpret the result that the CO₂-optimal number of DCs is higher than the cost-optimal number.**
+**Q45. 🎯 (CO4) Interpret the result that the CO₂-optimal number of DCs is higher than the cost-optimal number.**
 More DCs shorten outbound truck-km (less CO₂) but add facility and inventory cost; the gap shows the implicit carbon price needed (e.g. about ₹30,000/t in P7) to justify the extra DC. Managers can close it with green DCs, consolidation or rail on primary legs instead.
 
 **Q46. (CO4) Why is reverse logistics harder than forward, and how do you design the collection network?**
@@ -156,7 +159,7 @@ Uncertain quantity, timing and condition, low density, high collection/sorting c
 **Q47. (CO4) Explain the centre-of-gravity method and its limitations.**
 Cx = Σ xᵢWᵢ ÷ ΣWᵢ and Cy = Σ yᵢWᵢ ÷ ΣWᵢ give the weighted-average location minimising (approximately) ton-distance. Limitations: straight-line distance, ignores roads, land cost, terrain, labour, RE availability and social impact; the CoG point may be infeasible, so compare nearby feasible sites with load-distance and factor rating.
 
-**Q48. (CO5) What is the KPI trap and what makes a good measurement system?**
+**Q48. 🎯 (CO5) What is the KPI trap and what makes a good measurement system?**
 Too many KPIs (75 sustainability, 40 supplier, 30 logistics) yet no answer to "are we becoming more sustainable?". A good system passes five tests — material, balanced, actionable, comparable, credible — and each KPI answers what happened, why, who owns it, what decision changes.
 
 **Q49. (CO5) Explain leading vs lagging KPIs with SCOR examples.**
@@ -168,7 +171,7 @@ Composites hide failures: over-achievement on cost and carbon can mask safety an
 **Q51. (CO5) What does BRSR Core change for supply-chain managers?**
 It moves from disclosure to assured KPIs across nine ESG attributes (top 150 entities from FY2023–24, rising towards 1,000), so managers need data ownership, internal controls, a measurement methodology, supplier data, audit readiness and evidence trails. "Don't just report sustainability. Prove it."
 
-**Q52. (CO5) Activity vs outcome: "100% of suppliers trained in ESG" — is it proof of improvement?**
+**Q52. 🎯 (CO5) Activity vs outcome: "100% of suppliers trained in ESG" — is it proof of improvement?**
 No — it is an activity (input/process). Proof is outcomes: supplier emissions per unit down, violations down, audit scores up. Measure the whole chain inputs → processes → outputs → outcomes → impact.
 
 ---

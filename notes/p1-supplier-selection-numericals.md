@@ -1,4 +1,7 @@
 # CO2 Numericals: Supplier Weighted Scoring, Scorecards & TOPSIS
+
+> 🎯 **Teacher's importants (CO2, 7 marks):** *weighted scoring of suppliers only, no TOPSIS*: select the best supplier by weighted average and conclude why. Problems tagged 🎯 match this pattern; exam-format versions with model conclusions are on [CO2 7-markers](e3-co2-supplier-7-markers.md). TOPSIS, AHP, Kraljic and the risk matrix below are background only.
+
 This page covers **CO2: weighted scoring of suppliers**, the numerical your faculty named for CO2. It starts with the **exact problems from Lecture 6** 📘 (the weighted score model, the VoltTech supplier scorecard, the TOPSIS construction example and the supplier risk matrix) and the **Lecture 10 supplier sustainability scorecard** 📘, each solved step by step. After those come practice problems built in the same style (📗 = practice data, not from the course files). Turn on **Self-test** (press `T`) to hide the answers.
 
 Theory is on [Sustainable Procurement & Supplier Selection](ch03-sustainable-procurement.md).
@@ -29,7 +32,7 @@ Theory is on [Sustainable Procurement & Supplier Selection](ch03-sustainable-pro
 
 ---
 
-## Problem 1. Weighted Score Model — Suppliers A, B and C (Lecture 6, slide 24) 📘 ⭐⭐⭐
+## Problem 1. Weighted Score Model — Suppliers A, B and C (Lecture 6, slide 24) 📘 ⭐⭐⭐ 🎯
 *"Demonstrating Weighted Scoring for Supplier Evaluation — Easy Classroom Example."* Scores are out of 10.
 
 | Criteria | Weight (%) | Weight (decimal) | Supplier A score | Supplier B score | Supplier C score |
@@ -84,7 +87,7 @@ Gap = 8.15 − 7.70 = 0.45. Each carbon point is worth 0.15. Points needed = 0.4
 
 ---
 
-## Problem 2. Supplier Scorecard — VoltTech Components Pvt. Ltd. (Lecture 6, slide 22) 📘 ⭐⭐⭐
+## Problem 2. Supplier Scorecard — VoltTech Components Pvt. Ltd. (Lecture 6, slide 22) 📘 ⭐⭐⭐ 🎯
 Supplier: VoltTech Components Pvt. Ltd. · Category: electrical components (wires & connectors) · Industry: electrical appliances · Period: Apr–Jun 2025. Scores out of 100.
 
 | Criteria | Weight | Scoring method / metric | Supplier score (/100) |
@@ -126,7 +129,7 @@ From 78.4 to 86.2 over three quarters = +7.8 points (+9.9%). Average gain ≈ 2.
 
 ---
 
-## Problem 3. TOPSIS — Supplier Selection in Construction (Lecture 6, slide 25) 📘 ⭐⭐⭐
+## Problem 3. TOPSIS — Supplier Selection in Construction (Lecture 6, slide 25) 📘 · not in exam (no TOPSIS)
 *Project: residential building · Material: TMT steel bars · Requirement: 500 MT · Goal: select the best supplier.* TOPSIS = Technique for Order of Preference by Similarity to Ideal Solution: **choose the supplier closest to the ideal solution and farthest from the worst (negative-ideal) solution.**
 
 **Decision criteria:**
@@ -231,7 +234,7 @@ A: treat (dual sourcing from a second agro-climatic region, weather-indexed cont
 
 ---
 
-## Problem 5. Supplier Sustainability Scorecard — retain a 95/100 supplier with labour violations? (Lecture 10, slide 12) 📘 ⭐⭐⭐
+## Problem 5. Supplier Sustainability Scorecard — retain a 95/100 supplier with labour violations? (Lecture 10, slide 12) 📘 ⭐⭐⭐ 🎯
 Lecture 10 gives this scorecard and asks: *"Should a supplier with the following score be retained? 95/100 on cost-quality-delivery, but serious labour violations."* The slide's punchline: *"This is where sustainability becomes a management decision rather than a reporting exercise."*
 
 | Dimension | Weight |
@@ -271,7 +274,7 @@ M&M's supplier code of conduct is signed by **95% of suppliers by purchase value
 
 ---
 
-## Problem 6. Laptop manufacturer — evaluate three suppliers (Lecture 6 exercise, slide 32) 📘 + practice data 📗 ⭐⭐
+## Problem 6. Laptop manufacturer — evaluate three suppliers (Lecture 6 exercise, slide 32) 📘 + practice data 📗 ⭐⭐ 🎯
 The Lecture 6 exercise: *"For a laptop manufacturing company, evaluate three suppliers using Price, Quality, Carbon, Safety, Innovation and create your own supplier scorecard."* The slide gives no data, so here is a fully worked version with **assumed raw data** (state it in the exam).
 
 | Supplier (battery packs) | Price (₹/pack) | Defects (ppm) | Carbon (kg CO₂e/pack) | Safety (LTIFR) | Innovation (patents, 3 yrs) |
@@ -365,7 +368,7 @@ Base: M = 2.70 + 1.00 + 1.60 + 1.20 + 0.70 = **7.20**; N = 2.10 + 2.25 + 1.60 + 
 **Q11. A supplier's scores out of 100 are Price 82, Quality 91, Delivery 76, Carbon 64, Safety 88, Innovation 70, Compliance 98 under the VoltTech weights (25/20/15/15/10/10/5). Compute the score and rating.**
 20.50 + 18.20 + 11.40 + 9.60 + 8.80 + 7.00 + 4.90 = **80.40 → B (Good)**. The weakest area is carbon (64). Raising carbon to 80 adds 2.4 points (82.8).
 
-**Q12. In TOPSIS, a supplier has S⁺ = 0.030 and S⁻ = 0.045. Another has S⁺ = 0.020 and S⁻ = 0.025. Which is preferred?**
+**Q12. (Not in exam: TOPSIS) In TOPSIS, a supplier has S⁺ = 0.030 and S⁻ = 0.045. Another has S⁺ = 0.020 and S⁻ = 0.025. Which is preferred?**
 C₁* = 0.045 ÷ 0.075 = **0.600**; C₂* = 0.025 ÷ 0.045 = **0.556**. The first supplier is preferred even though it is farther from the ideal, because it is relatively much farther from the worst.
 
 **Q13. Using the Lecture 6 risk bands, classify: (i) Possible × Severe; (ii) Certain × Minor; (iii) Rare × Severe; (iv) Most likely × Moderate.**

@@ -1,206 +1,251 @@
-# CO4 · 10-Mark Numericals: SSCM Network Design, Logistics Cost & Distance
-Your teacher's pattern: **CO4 = 10 marks, a numerical on SSCM network design**. Expect cost **and** carbon in the same question, a choice between networks, sites, modes or numbers of DCs, and an interpretation. This page has six full 10-mark questions with marks splits and model answers. Q1, Q3 and Q6 are the course's own examples (Lectures 8 and 10) 📘; Q2, Q4 and Q5 are practice questions in the same style 📗. Turn on **Self-test** (`T`) to hide the answers.
+# CO4 · 10-Mark Numericals: SSCM Distribution Networks, Logistics Cost, Distance Criteria
+**What the exam asks (teacher's importants):** *different scenarios will be given with different costs; find the total cost for each scenario and compare which is the best scenario to select.* Every answer must have **six parts**:
+1. **Identify the objective function**
+2. **Define the decision variables**
+3. **State the assumptions made**
+4. **Calculate total cost** (it may not be given directly: build it from transportation, inventory, facility and other costs)
+5. **Compare the total cost and select the best scenario**
+6. **Write a short interpretation and recommendation** on how to improve cost using **new sustainable technologies** (IoT, blockchain, AI route optimisation, etc.) for traceability, operational efficiency and sustainability
 
-Full theory and more problems: [Network & Logistics Numericals](p3-network-logistics-numericals.md) · [Designing the Sustainable Network](ch07-network-design.md) · [Sustainable Logistics](ch06-sustainable-logistics.md).
+Every question below is answered in exactly these six parts. Q1 and Q5 use the course's own examples (Lectures 8 and 10) 📘; Q2, Q3, Q4 and Q6 are practice questions in the same style 📗. Turn on **Self-test** (`T`) to hide the answers.
 
 ---
 
-## How a 10-mark network answer earns its marks ⭐⭐⭐
-| Step | What to write | Marks it usually carries |
+## The 10-mark answer template ⭐⭐⭐
+| Part | What to write | Marks |
 |---|---|---|
-| 1. Objective | **Minimise Z = C_total + λ·E_CO₂ + μ·W_waste** (Lecture 8); C_total = facility + production + transport + inventory + collection + recovery + disposal | 1 |
-| 2. Data table | Each option's cost, CO₂ (t × km × factor, or litres × 2.68) and service or recovery | 1–2 |
-| 3. Calculate | Totals for every option; load-distance or centre of gravity; switching carbon price | 4 |
-| 4. Choose | The winner on cost, on carbon, and on the combined Z; any Pareto trade-off | 1–2 |
-| 5. Interpret + recommend | Service (OTIF, lead time), resilience, circularity, one line of theory: *"The best sustainable network is not necessarily the cheapest network."* | 2 |
+| 1. Objective function | **Minimise Z = Total cost = Σ (facility + transportation + inventory + handling/processing) + λ·CO₂** (Lecture 8: Z = C_total + λ·E_CO₂ + μ·W_waste). Say in words: minimise total annual cost (and carbon cost) subject to meeting demand | 1 |
+| 2. Decision variables | **yⱼ** = 1 if scenario/facility j is selected (0 otherwise); **xᵢⱼ** = quantity moved from i to j; mode or number of DCs; **rᵢ** = quantity recovered | 1 |
+| 3. Assumptions | Demand known and constant; costs linear and per unit/per t-km; capacity sufficient; same service level; emission factors; carrying rate; 365 days | 1 |
+| 4. Total cost | A cost-build table per scenario: transport (t × km × ₹/t-km), inventory (in-transit + cycle/safety stock × value × carrying %), facility (fixed), handling, carbon (t CO₂ × price) | 4 |
+| 5. Compare and select | A comparison table; pick the **lowest total cost**; mention CO₂ alongside | 1 |
+| 6. Interpretation + technology | Why the winner wins (which cost drives it); **2–3 technologies with the cost line they cut** and the sustainability benefit | 2 |
 
-**Formulas:** transport CO₂ = tonnes × km × factor (road ≈ 0.09, rail ≈ 0.025, water ≈ 0.015, air ≈ 0.60 kg/t-km 📗) · **centre of gravity** Cx = Σxᵢwᵢ ÷ Σwᵢ, Cy = Σyᵢwᵢ ÷ Σwᵢ · **load-distance** = Σ load × distance (Euclidean √(Δx² + Δy²) or rectilinear |Δx| + |Δy|) · **switching price**: set Z_A = Z_B and solve for λ · in-transit inventory cost = annual tonnes × value per t × carrying rate × transit days ÷ 365.
+**Cost formulas:** transport = tonnes × km × ₹ per t-km (or trips × ₹ per trip; litres × ₹ per litre) · in-transit inventory = annual t × value per t × carrying % × transit days ÷ 365 · cycle/safety stock cost = average units × value × carrying % · CO₂ = t × km × factor (road 0.09, rail 0.025, water 0.015 kg/t-km 📗) or litres × 2.68 · carbon cost = t CO₂ × internal carbon price · **load-distance** = Σ load × distance; centre of gravity Cx = Σxw ÷ Σw, Cy = Σyw ÷ Σw.
+
+**Technology menu for Part 6 (what each one cuts):**
+| Technology | Cost line it improves | Sustainability benefit |
+|---|---|---|
+| **AI route optimisation** | Transport: fewer km, fewer trips, higher utilisation (typically 5–15% 📗) | Less fuel and CO₂, fewer empty km |
+| **IoT / telematics** | Fuel (eco-driving, idling), maintenance, cold-chain losses; warehouse energy | Real-time CO₂ and energy data, less spoilage |
+| **Blockchain** | Fewer disputes, faster recalls, lower audit and documentation cost | **Traceability** of origin, ethical sourcing, verified carbon data |
+| **AI demand forecasting** | Inventory: lower safety stock, less obsolescence | Less over-production and waste |
+| **RFID / IoT tags** | Inventory accuracy, picking errors, returns sorting | Fewer lost goods, better reverse-logistics recovery |
+| **Digital twin** | Avoids costly network mistakes; tests scenarios before building | Simulate CO₂ of each network option |
+| **Control tower / visibility platform** | Expediting, premium freight, disruption cost | Resilience; fewer emergency air shipments |
+Lecture 9 caution: technology adds its own energy, e-waste and cyber risk, so evaluate it on **Net Technology Value** and pilot first.
 
 ---
 
-## Q1 (10 marks). Which sustainable network: A, B or C? (Lecture 8) 📘 ⭐⭐⭐
-| Network | Cost (₹) | CO₂ | Recovery |
+## Q1 (10 marks). Network A, B or C (Lecture 8, slides 36–37) 📘 ⭐⭐⭐ 🎯
+| Network | Cost (₹ per unit) | CO₂ (kg per unit) | Recovery |
 |---|---|---|---|
 | A | 100 | 100 | 20% |
 | B | 108 | 75 | 50% |
 | C | 115 | 55 | 70% |
+The company puts an internal price of **₹0.40 per kg CO₂** on emissions. Find the total cost of each network, select the best and recommend technologies.
 
-(a) Is any network dominated? (1) (b) Compute the cost of each unit of CO₂ avoided moving A → B and B → C. (2) (c) Using Z = Cost + λ·CO₂, find the ranges of λ for which each network is best. (3) (d) With λ = 0.30 and a benefit of μ = ₹0.10 per percentage point of recovery (Z = Cost + λ·CO₂ − μ·Recovery), which network wins? (2) (e) Recommend. (2)
+**Q1.1 Objective function. [1 mark]**
+**Minimise Z = Cᵢ + λ·Eᵢ** for the chosen network i, where Cᵢ = logistics cost per unit, Eᵢ = kg CO₂ per unit, λ = ₹0.40 per kg (Lecture 8: Z = C_total + λ·E_CO₂ + μ·W_waste; μ = 0 here).
 
-**Q1.1 (a) Dominance. [1 mark]**
-None is dominated: A is cheapest, C has the lowest CO₂ and highest recovery, B is in the middle on all three. **All three are Pareto-efficient**, so the choice depends on the decision-maker's priorities.
+**Q1.2 Decision variables. [1 mark]**
+**y_A, y_B, y_C ∈ {0, 1}** = 1 if that network is selected, with y_A + y_B + y_C = 1 (exactly one network).
 
-**Q1.2 (b) Cost per unit of CO₂ avoided. [2 marks]**
-A → B: ₹8 ÷ 25 = **₹0.32 per unit CO₂** (+30 points recovery). B → C: ₹7 ÷ 20 = **₹0.35 per unit CO₂** (+20 points recovery).
+**Q1.3 Assumptions. [1 mark]**
+Costs and CO₂ are per unit and constant with volume; all three networks give the same service level (OTIF); carbon price ₹0.40/kg is the firm's internal price; recovery is valued at zero in the base case.
 
-**Q1.3 (c) Ranges of λ. [3 marks]**
-Z_A = 100 + 100λ; Z_B = 108 + 75λ; Z_C = 115 + 55λ.
-A = B → 25λ = 8 → **λ = 0.32**. B = C → 20λ = 7 → **λ = 0.35**.
-**λ < 0.32 → A; 0.32 < λ < 0.35 → B; λ > 0.35 → C.** Check λ = 0.5: A 150, B 145.5, C 142.5 → C ✓.
+**Q1.4 Total cost. [4 marks]**
+| Network | Logistics cost | Carbon cost (λ × CO₂) | **Total Z** |
+|---|---|---|---|
+| A | 100 | 0.40 × 100 = 40.0 | **140.0** |
+| B | 108 | 0.40 × 75 = 30.0 | **138.0** |
+| C | 115 | 0.40 × 55 = 22.0 | **137.0** |
+Switching prices: A = B at λ = 8 ÷ 25 = **₹0.32/kg**; B = C at λ = 7 ÷ 20 = **₹0.35/kg**. So A is best below ₹0.32, B between ₹0.32 and ₹0.35, **C above ₹0.35**.
 
-**Q1.4 (d) Adding the value of recovery. [2 marks]**
-Z_A = 100 + 30 − 2 = **128**; Z_B = 108 + 22.5 − 5 = **125.5**; Z_C = 115 + 16.5 − 7 = **124.5** → **C wins**, even though at λ = 0.30 alone A would win (130 vs 130.5 vs 131.5). Valuing circularity moves the decision towards the closed-loop network.
+**Q1.5 Compare and select. [1 mark]**
+At λ = ₹0.40, **select Network C (₹137 per unit)**. Without a carbon price A would win (₹100); the decision depends on the decision-maker's priorities, as the slide says.
 
-**Q1.5 (e) Recommendation. [2 marks]**
-*"There is no single best network without defining decision-maker priorities"* (Lecture 8). A cost-only firm picks A; any firm that prices carbon above about ₹0.35 per unit, or values recovered material, picks **C**. **B is a sensible transition network**: only 8% dearer than A, 25% less CO₂, 50% recovery. Recommend B now with a roadmap to C as carbon prices (CCTS, CBAM) and EPR recovery targets tighten.
+**Q1.6 Interpretation and technology. [2 marks]**
+C costs ₹15 more per unit in logistics but saves 45 kg CO₂ and recovers 70% of material: *"the best sustainable network is not necessarily the cheapest network."* To close C's cost gap: **AI route optimisation** for the collection runs (fewer km, higher fill), **IoT/RFID tags** on returned products to grade them automatically at the sorting centre (lower handling cost, more reuse and remanufacture), and **blockchain** records of recovered material for verified recycled-content claims and EPR compliance.
 
 ---
 
-## Q2 (10 marks). Locating a central DC: centre of gravity and load-distance 📗 ⭐⭐⭐
-A consumer-durables firm serves five markets (grid unit = 100 km) and will open one DC.
+## Q2 (10 marks). Road vs rail for a steel-products flow 📗 ⭐⭐⭐
+A firm ships **20,000 t a year** Pune → Kolkata (1,800 km). Goods are worth ₹50,000 per t; inventory carrying cost 18% a year; internal carbon price ₹2,000 per t CO₂.
+- **Scenario 1, Road:** ₹3.0 per t-km; 4 days door to door; 0.09 kg CO₂/t-km.
+- **Scenario 2, Rail (multimodal):** 1,700 km rail at ₹1.8 per t-km and 0.025 kg/t-km + 100 km road first/last mile at ₹3.5 per t-km and 0.09 kg/t-km + handling ₹150 per t; 7 days.
 
-| Market | x | y | Annual volume (t) |
-|---|---|---|---|
-| Jaipur | 2 | 9 | 3,000 |
-| Ahmedabad | 1 | 6 | 5,000 |
-| Indore | 4 | 6 | 2,000 |
-| Nagpur | 7 | 5 | 4,000 |
-| Hyderabad | 6 | 1 | 6,000 |
+**Q2.1 Objective function. [1 mark]**
+**Minimise Z = Transport cost + In-transit inventory cost + Handling cost + λ·CO₂**, for 20,000 t a year.
 
-Candidate sites: **Bhopal (4, 7), Aurangabad (4, 4), Nagpur (7, 5)**. Road freight costs ₹2.5 per t-km and emits 0.09 kg CO₂ per t-km.
-(a) Find the centre of gravity. (2) (b) Compute the Euclidean load-distance score for each candidate and choose a site. (4) (c) Convert the scores into annual transport cost and CO₂. (2) (d) What else should a sustainable location decision consider? (2)
+**Q2.2 Decision variables. [1 mark]**
+**x_road, x_rail** = tonnes per year by each mode, with x_road + x_rail = 20,000 and x ≥ 0 (here we compare the two pure scenarios: all road or all rail).
 
-**Q2.1 (a) Centre of gravity. [2 marks]**
-Σw = 20,000 t. Cx = (2×3,000 + 1×5,000 + 4×2,000 + 7×4,000 + 6×6,000) ÷ 20,000 = 83,000 ÷ 20,000 = **4.15**. Cy = (9×3,000 + 6×5,000 + 6×2,000 + 5×4,000 + 1×6,000) ÷ 20,000 = 95,000 ÷ 20,000 = **4.75**. CoG = **(4.15, 4.75)**, about 415 km east and 475 km north of the grid origin.
+**Q2.3 Assumptions. [1 mark]**
+Demand constant at 20,000 t; linear costs; 365 days; same safety stock policy (rail's extra 3 days handled by extra safety stock, shown separately); carbon price ₹2,000/t; factors as given.
 
-**Q2.2 (b) Load-distance scores. [4 marks]**
-| Market (t) | Bhopal (4, 7) | Aurangabad (4, 4) | Nagpur (7, 5) |
-|---|---|---|---|
-| Jaipur (3,000) | √(4 + 4) = 2.828 → 8,485 | √(4 + 25) = 5.385 → 16,155 | √(25 + 16) = 6.403 → 19,209 |
-| Ahmedabad (5,000) | √(9 + 1) = 3.162 → 15,811 | √(9 + 4) = 3.606 → 18,028 | √(36 + 1) = 6.083 → 30,414 |
-| Indore (2,000) | √(0 + 1) = 1.000 → 2,000 | √(0 + 4) = 2.000 → 4,000 | √(9 + 1) = 3.162 → 6,325 |
-| Nagpur (4,000) | √(9 + 4) = 3.606 → 14,422 | √(9 + 1) = 3.162 → 12,649 | 0 → 0 |
-| Hyderabad (6,000) | √(4 + 36) = 6.325 → 37,947 | √(4 + 9) = 3.606 → 21,633 | √(1 + 16) = 4.123 → 24,739 |
-| **Total (t × grid units)** | **78,666** | **72,466** | **80,686** |
-
-**Aurangabad has the lowest load-distance (72,466)**, then Bhopal (78,666), then Nagpur (80,686). Aurangabad is also the candidate nearest the CoG (the CoG itself scores 70,284, a lower bound worth quoting).
-
-**Q2.3 (c) Transport cost and CO₂. [2 marks]**
-t-km = score × 100 km. Aurangabad: 72.47 lakh t-km × ₹2.5 = **₹1.81 crore**, × 0.09 kg = **652 t CO₂**. Bhopal: 78.67 lakh t-km → **₹1.97 crore, 708 t**. Nagpur: 80.69 lakh t-km → **₹2.02 crore, 726 t**. Aurangabad saves ₹15–21 lakh and 56–74 t CO₂ a year against the alternatives.
-
-**Q2.4 (d) Beyond distance. [2 marks]**
-Distance minimises transport effort, but Lecture 8 and 11 add: **rail and multimodal access** (can the long Hyderabad and Jaipur legs move by rail?), **grid carbon intensity and rooftop-solar potential**, **water stress and flood or heat risk**, land and labour cost, and dependence on a single highway or port. Use a **factor-rating** table (Σ weight × score) on these with the load-distance result as one factor, then decide.
-
----
-
-## Q3 (10 marks). FMCG distribution network: logistics cost, CO₂ and KPIs (Lecture 10) 📘 ⭐⭐⭐
-An FMCG company makes **10,000 deliveries a month**, average loaded distance **180 km**, diesel trucks, **62% average vehicle utilisation** and **18% empty return km**. Assume 9-t trucks, 4 km per litre, diesel 2.68 kg CO₂/l and ₹92/l (state these).
-(a) Compute monthly total km, diesel, CO₂ and fuel cost. (3) (b) Compute g CO₂ per tonne-km. (1) (c) Utilisation rises to 80% and empty km falls to 10%. Recompute and state the savings. (4) (d) Give the five KPIs with targets. (2)
-
-**Q3.1 (a) Current state. [3 marks]**
-Loaded km = 10,000 × 180 = 18,00,000. Loaded = 82% of total → total = 18,00,000 ÷ 0.82 = **21,95,122 km** (empty 3,95,122). Diesel = 21,95,122 ÷ 4 = **5,48,780 l**. CO₂ = 5,48,780 × 2.68 = **1,470.7 t a month** (≈ 17,650 t a year). Fuel cost = 5,48,780 × ₹92 = **₹5.05 crore a month**.
-
-**Q3.2 (b) Intensity. [1 mark]**
-Payload = 62% × 9 = 5.58 t. t-km = 10,000 × 5.58 × 180 = 1,00,44,000. Intensity = 14,70,732 kg ÷ 1,00,44,000 = **146 g CO₂ per t-km**.
-
-**Q3.3 (c) After consolidation and backhauls. [4 marks]**
-Tonnage = 10,000 × 5.58 = 55,800 t. At 80%, each truck carries 7.2 t → trips = 55,800 ÷ 7.2 = **7,750**. Loaded km = 7,750 × 180 = 13,95,000; total = 13,95,000 ÷ 0.90 = **15,50,000 km**. Diesel = **3,87,500 l** → CO₂ = **1,038.5 t**; cost = **₹3.57 crore**.
-**Savings: 432 t CO₂ a month (−29.4%) and ₹1.48 crore a month (≈ ₹17.8 crore a year).** New intensity = 10,38,500 ÷ 1,00,44,000 = **103 g per t-km**.
-
-**Q3.4 (d) Five KPIs (Lecture 10 slide). [2 marks]**
-| KPI | Current | Target |
+**Q2.4 Total cost. [4 marks]**
+| Cost line (₹ lakh) | Road | Rail |
 |---|---|---|
-| CO₂e per tonne-km | 146 g | ≤ 105 g |
-| Fuel efficiency (km/l) | 4.0 | 4.4 |
-| Vehicle utilisation % | 62% | ≥ 80% |
-| Empty km % | 18% | ≤ 10% |
-| OTIF % | measure | ≥ 95%, so consolidation does not hurt service |
-*"The cleanest kilometre is often the kilometre eliminated."* Fixing utilisation and empty running beats buying new trucks.
+| Transport | 20,000 × 1,800 × 3.0 = **1,080.0** | 20,000 × 1,700 × 1.8 = 612.0 + 20,000 × 100 × 3.5 = 70.0 → **682.0** |
+| Handling | — | 20,000 × 150 = **30.0** |
+| In-transit inventory | 20,000 × 50,000 × 0.18 × 4 ÷ 365 = **19.7** | × 7 ÷ 365 = **34.5** |
+| CO₂ (t) | 20,000 × 1,800 × 0.09 ÷ 1,000 = 3,240 | 850 + 180 = 1,030 |
+| Carbon cost | 3,240 × 2,000 = **64.8** | 1,030 × 2,000 = **20.6** |
+| **Total Z** | **1,164.5** | **767.1** |
+
+**Q2.5 Compare and select. [1 mark]**
+**Select Scenario 2, rail: ₹7.67 crore vs ₹11.65 crore, a saving of ₹3.97 crore a year (34%) and 2,210 t CO₂ (−68%).** Even after adding 3 days of safety stock (≈ 164 t × ₹50,000 × 18% = ₹14.8 lakh), rail stays ≈ ₹3.8 crore cheaper.
+
+**Q2.6 Interpretation and technology. [2 marks]**
+Transport cost per t-km drives the result; rail is cheaper and greener, but slower. Keep **road for urgent orders** (10–20%) and move base volume by rail. Technologies: **IoT GPS trackers on rakes and containers** for real-time ETAs (lets the buyer cut the extra safety stock); **AI demand forecasting** to plan rail lots earlier; **blockchain e-documents** (e-BL, e-invoices) to cut handling delays and disputes at transfer points and give traceability.
 
 ---
 
-## Q4 (10 marks). Road vs rail: total logistics cost with inventory and carbon 📗 ⭐⭐⭐
-A steel-products firm ships **20,000 t a year** from Pune to Kolkata (1,800 km). Goods are worth ₹50,000 per t; inventory carrying cost is 18% a year; the internal carbon price is ₹2,000 per t CO₂.
-- **Road:** ₹3.0 per t-km, 4 days door to door, 0.09 kg CO₂/t-km.
-- **Rail (multimodal):** 1,700 km rail at ₹1.8 per t-km and 0.025 kg/t-km, plus 100 km of road first and last mile at ₹3.5 per t-km and 0.09 kg/t-km, plus handling ₹150 per t; 7 days door to door.
-(a) Compute freight cost for each option. (3) (b) Compute in-transit inventory cost. (2) (c) Compute CO₂ and carbon cost, then the total cost of each option. (3) (d) Recommend, including service. (2)
-
-**Q4.1 (a) Freight cost. [3 marks]**
-Road = 20,000 × 1,800 × 3.0 = **₹10.80 crore**. Rail = 20,000 × 1,700 × 1.8 (₹6.12 cr) + 20,000 × 100 × 3.5 (₹0.70 cr) + 20,000 × 150 (₹0.30 cr) = **₹7.12 crore**.
-
-**Q4.2 (b) In-transit inventory. [2 marks]**
-Road = 20,000 × 50,000 × 0.18 × 4 ÷ 365 = **₹19.7 lakh**. Rail = × 7 ÷ 365 = **₹34.5 lakh**. Rail's 3 extra days cost ₹14.8 lakh a year; extra safety stock for 3 days (≈ 164 t × ₹50,000 × 18%) adds about ₹14.8 lakh more.
-
-**Q4.3 (c) CO₂ and total cost. [3 marks]**
-Road CO₂ = 20,000 × 1,800 × 0.09 ÷ 1,000 = **3,240 t** → carbon cost ₹64.8 lakh.
-Rail CO₂ = 20,000 × 1,700 × 0.025 ÷ 1,000 (850 t) + 20,000 × 100 × 0.09 ÷ 1,000 (180 t) = **1,030 t** → ₹20.6 lakh.
-
-| Option | Freight | Inventory | Carbon | **Total** |
-|---|---|---|---|---|
-| Road | 10.80 | 0.20 | 0.65 | **₹11.65 crore** |
-| Rail | 7.12 | 0.35 | 0.21 | **₹7.67 crore** |
-
-Rail saves **≈ ₹3.97 crore a year (34%)** and **2,210 t CO₂ (−68%)**, still ≈ ₹3.8 crore after the extra safety stock.
-
-**Q4.4 (d) Recommendation. [2 marks]**
-Move the **base, predictable volume by rail**, with safety stock at the Kolkata DC to absorb the longer and less reliable lead time; keep **road for urgent or small orders** (say 10–20%). Check rake availability and minimum lot sizes, and handling damage. This is Lecture 8's principle: *"use the lowest-impact transport mode compatible with service requirements"*, a **sustainable multimodal network**.
-
----
-
-## Q5 (10 marks). How many DCs? Cost vs carbon 📗 ⭐⭐⭐
-| DCs | Facility | Inventory | Inbound | Outbound | CO₂ (t/yr) |
+## Q3 (10 marks). How many DCs? (facility, inventory and transport) 📗 ⭐⭐⭐
+| DCs | Facility | Inventory | Inbound transport | Outbound transport | CO₂ (t/yr) |
 |---|---|---|---|---|---|
 | 1 | 4.0 | 6.0 | 2.0 | 20.0 | 5,800 |
 | 2 | 7.0 | 7.5 | 2.6 | 13.0 | 4,500 |
 | 3 | 10.0 | 8.7 | 3.2 | 9.5 | 4,075 |
 | 4 | 13.0 | 9.8 | 3.8 | 7.8 | 4,100 |
 | 5 | 16.0 | 10.8 | 4.4 | 7.0 | 4,350 |
-(costs in ₹ crore a year)
+(₹ crore a year.) Find the best number of DCs, with and without a carbon price of ₹2,000/t.
 
-(a) Total cost and the cost-minimising number of DCs. (3) (b) The CO₂-minimising number. (1) (c) At what carbon price does 3 DCs beat 2? (3) (d) Explain the trade-off and recommend. (3)
+**Q3.1 Objective function. [1 mark]**
+**Minimise Z(n) = Facility(n) + Inventory(n) + Inbound(n) + Outbound(n) + λ·CO₂(n)**, over n = 1 to 5 DCs.
 
-**Q5.1 (a) Total cost. [3 marks]**
-1 DC = **32.0**, 2 = **30.1**, 3 = **31.4**, 4 = **34.4**, 5 = **38.2** → minimum at **2 DCs (₹30.1 crore)**.
+**Q3.2 Decision variables. [1 mark]**
+**n** = number of DCs opened; **yⱼ** = 1 if candidate DC j is opened; **xᵢⱼ** = flow from plant i or DC j to customer zones.
 
-**Q5.2 (b) Lowest CO₂. [1 mark]**
-**3 DCs (4,075 t)**.
+**Q3.3 Assumptions. [1 mark]**
+Demand and service level are the same for every n; inventory rises with n (square-root law); costs as given; carbon price ₹2,000/t (= ₹0.002 crore per 10 t).
 
-**Q5.3 (c) Switching carbon price. [3 marks]**
-30.1 crore + 4,500p = 31.4 crore + 4,075p → 425p = ₹1.3 crore → **p = ₹30,588 per t CO₂**. Below about ₹30,600 per tonne (far above current Indian or EU prices), 2 DCs stays optimal.
-
-**Q5.4 (d) Trade-off and recommendation. [3 marks]**
-More DCs shorten the last mile (outbound ↓) but add buildings, energy and inbound trips, and raise inventory (safety stock grows with the square root of the number of DCs). CO₂ falls up to 3 DCs and then rises as facility energy and inbound trips outweigh shorter delivery. **Recommend 2 DCs now**, with rooftop solar, EV last-mile in the metros and consolidated inbound to cut the 4,500 t, and design for a third DC if carbon prices, service targets or demand rise.
-
----
-
-## Q6 (10 marks). Reverse network: allocating 10,000 returned units (Lecture 8) 📘 ⭐⭐⭐
-Returns = Reuse 2,000 · Repair 2,500 · Remanufacture 2,000 · Recycling 3,000 · Disposal 500. Assumed economics (📗):
-
-| Stream | Processing cost (₹/unit) | Recovered value (₹/unit) | CO₂ avoided (kg/unit) |
+**Q3.4 Total cost. [4 marks]**
+| DCs | Logistics total (₹ cr) | Carbon cost (CO₂ × 2,000) | **Z (₹ cr)** |
 |---|---|---|---|
-| Reuse | 200 | 2,000 | 40 |
-| Repair | 800 | 1,800 | 30 |
-| Remanufacture | 1,500 | 3,000 | 25 |
-| Recycling | 300 | 500 | 8 |
-| Disposal | 150 | 0 | −2 |
+| 1 | 4.0 + 6.0 + 2.0 + 20.0 = **32.0** | 1.16 | **33.16** |
+| 2 | **30.1** | 0.90 | **31.00** |
+| 3 | **31.4** | 0.82 | **32.22** |
+| 4 | **34.4** | 0.82 | **35.22** |
+| 5 | **38.2** | 0.87 | **39.07** |
 
-(a) Verify the material balance and compute the recovery rate. (2) (b) Compute net value and CO₂ avoided. (4) (c) Value of moving 500 units from recycling to remanufacture. (2) (d) Where should each stream be processed? (2)
+**Q3.5 Compare and select. [1 mark]**
+**Select 2 DCs (₹30.1 crore; ₹31.0 crore with carbon).** 3 DCs has the lowest CO₂ but would only win at a carbon price above ₹1.3 crore ÷ 425 t = **₹30,588 per t**.
 
-**Q6.1 (a) Balance and recovery rate. [2 marks]**
-2,000 + 2,500 + 2,000 + 3,000 + 500 = **10,000** ✓. Recovery rate = 9,500 ÷ 10,000 = **95%**; value-retaining recovery (reuse + repair + remanufacture) = **65%**.
-
-**Q6.2 (b) Net value and CO₂ avoided. [4 marks]**
-| Stream | Net value | CO₂ avoided |
-|---|---|---|
-| Reuse | 2,000 × 1,800 = ₹36.00 lakh | 80 t |
-| Repair | 2,500 × 1,000 = ₹25.00 lakh | 75 t |
-| Remanufacture | 2,000 × 1,500 = ₹30.00 lakh | 50 t |
-| Recycling | 3,000 × 200 = ₹6.00 lakh | 24 t |
-| Disposal | 500 × (−150) = −₹0.75 lakh | −1 t |
-| **Total** | **₹96.25 lakh** | **228 t** |
-
-**Q6.3 (c) Moving 500 units up the hierarchy. [2 marks]**
-+500 × (1,500 − 200) = **₹6.5 lakh** and +500 × (25 − 8) = **8.5 t CO₂**. Recycling is 30% of volume but only 6% of value: *"Recycling is usually lower in the value-retention hierarchy than reuse, repair and remanufacturing."*
-
-**Q6.4 (d) Where to process. [2 marks]**
-Reuse → resale direct from a **regional collection/sorting centre** (no factory trip); repair → **regional repair hub** near customers; remanufacture → **central plant** where skills and tooling are concentrated (Renault Refactory, Tata Prolife); recycling → **specialist recycler** (Attero, Lohum); disposal → authorised TSDF. Process close to the customer for streams that return to the market and centrally for streams that need scale: a **hybrid collection network**.
+**Q3.6 Interpretation and technology. [2 marks]**
+More DCs shorten the last mile but add buildings, inventory and inbound trips: total cost is U-shaped. With 2 DCs, outbound transport (₹13 crore, 43%) is the biggest line: **AI route optimisation and dynamic slotting** of deliveries can cut it 5–10%; **IoT-based warehouse energy management** with rooftop solar cuts facility energy; **AI forecasting + RFID** cuts the inventory needed to hold service with fewer DCs. A **digital twin** of the network can test a third DC before investing.
 
 ---
 
-## Quick checklist before you hand in a CO4 answer ⭐⭐⭐
-- Did you write the **objective function** and define every term?
-- Did you compute **both cost and CO₂** for every option?
-- Did you show the **switching λ** or the trade-off ratio, not only one winner?
-- Did you include **inventory** (in-transit, safety stock) when lead times differ?
-- Did you comment on **service** (OTIF, lead time), **resilience** and **circularity**?
-- Did you close with a Lecture 8 line: *"the best sustainable network is not necessarily the cheapest"*?
+## Q4 (10 marks). Reverse network for 10,000 returns: centralised, decentralised or hybrid? 📗 ⭐⭐⭐
+Each returned unit weighs 25 kg and is worth ₹2,000 in the pipeline; carrying cost 20% a year; road transport ₹4 per t-km and 0.09 kg CO₂/t-km.
+| Scenario | Fixed facility cost (₹ lakh/yr) | Processing (₹/unit) | Average transport | Pipeline time |
+|---|---|---|---|---|
+| A: Centralised (one recovery plant) | 40 | 300 | 800 km | 12 days |
+| B: Decentralised (4 regional centres) | 60 | 350 | 200 km | 5 days |
+| C: Hybrid (3 local sorting centres + 1 central plant) | 58 | 310 | 150 km for all + 700 km for 40% | 8 days |
+
+**Q4.1 Objective function. [1 mark]**
+**Minimise Z = Fixed facility cost + Processing cost + Collection transport cost + Pipeline inventory cost (+ λ·CO₂)** for 10,000 returns a year, subject to Returns = Reuse + Repair + Remanufacture + Recycling + Disposal.
+
+**Q4.2 Decision variables. [1 mark]**
+**yⱼ** = 1 if recovery facility j is opened; **xᵢⱼ** = returns sent from collection point i to facility j; **rᵢ** = units recovered by each route.
+
+**Q4.3 Assumptions. [1 mark]**
+Volume fixed at 10,000; same recovery mix in every scenario; linear transport cost; 365 days; carbon optional.
+
+**Q4.4 Total cost. [4 marks]**
+| Cost line (₹ lakh) | A: Centralised | B: Decentralised | C: Hybrid |
+|---|---|---|---|
+| Fixed | 40.00 | 60.00 | 58.00 |
+| Processing (10,000 × ₹) | 30.00 | 35.00 | 31.00 |
+| Transport | 10,000 × 0.025 × 800 × 4 = **8.00** | × 200 = **2.00** | 0.025 × (150 + 0.4 × 700) × 4 × 10,000 = **4.30** |
+| Pipeline inventory | 10,000 × 2,000 × 0.20 × 12 ÷ 365 = **1.32** | × 5/365 = **0.55** | × 8/365 = **0.88** |
+| **Total** | **79.32** | **97.55** | **94.18** |
+| CO₂ (t) | 2,00,000 t-km → 18.0 | 50,000 → 4.5 | 1,07,500 → 9.7 |
+
+**Q4.5 Compare and select. [1 mark]**
+**Select A, centralised (₹79.3 lakh).** It is ₹14.9–18.2 lakh cheaper; even at ₹2,000/t CO₂ its extra 13.5 t costs only ₹0.27 lakh more than B.
+
+**Q4.6 Interpretation and technology. [2 marks]**
+At low volume, fixed facility cost dominates, so one central plant wins (Lecture 8: centralised suits low-volume, high-value returns; decentralised suits high-volume, bulky returns). Technologies: **AI route optimisation / milk runs** to consolidate pickups (cut the ₹8 lakh transport and 18 t CO₂); **IoT/RFID tags and a returns app** to grade products at pickup so only units worth remanufacturing travel to the central plant; **blockchain product passports** recording product history for faster grading, warranty checks and verified recycled-content claims.
+
+---
+
+## Q5 (10 marks). FMCG distribution network: current vs improved (Lecture 10, slide 12) 📘 ⭐⭐⭐ 🎯
+Scenario 1 (current): **10,000 deliveries a month**, average loaded distance **180 km**, diesel trucks, **62% vehicle utilisation**, **18% empty km**. Scenario 2 (improved): utilisation **80%**, empty km **10%**, same tonnage moved.
+
+**Q5.1 Objective function. [1 mark]**
+**Minimise Z = Fuel cost + Carbon cost** of monthly distribution = (total km ÷ km per litre) × ₹ per litre + CO₂ × λ, subject to delivering the same tonnage.
+
+**Q5.2 Decision variables. [1 mark]**
+**Number of trips Nᵗ**, **load per trip** (utilisation), **routing xᵢⱼ** (which truck serves which customers in which order), **backhaul allocation** to reduce empty km.
+
+**Q5.3 Assumptions. [1 mark]**
+9-t trucks; 4 km per litre; diesel ₹92/l and 2.68 kg CO₂/l; "18% empty" = share of total km; 180 km = loaded km per trip; driver and vehicle fixed costs ignored (they would favour Scenario 2 further).
+
+**Q5.4 Total cost. [4 marks]**
+| | Scenario 1: Current | Scenario 2: Improved |
+|---|---|---|
+| Tonnage | 10,000 × 0.62 × 9 = 55,800 t | 55,800 t |
+| Trips | 10,000 | 55,800 ÷ (0.80 × 9) = **7,750** |
+| Loaded km | 18,00,000 | 13,95,000 |
+| Total km | ÷ 0.82 = **21,95,122** | ÷ 0.90 = **15,50,000** |
+| Diesel (l) | ÷ 4 = **5,48,780** | **3,87,500** |
+| Fuel cost | × ₹92 = **₹5.05 crore** | **₹3.57 crore** |
+| CO₂ | × 2.68 = **1,470.7 t** | **1,038.5 t** |
+| Carbon cost at ₹2,000/t | ₹0.29 crore | ₹0.21 crore |
+| **Total Z** | **₹5.34 crore/month** | **₹3.77 crore/month** |
+| g CO₂ per t-km | 146 | 103 |
+
+**Q5.5 Compare and select. [1 mark]**
+**Select Scenario 2: ₹1.57 crore a month cheaper (≈ ₹18.8 crore a year, −29%) and 432 t CO₂ a month less.**
+
+**Q5.6 Interpretation and technology. [2 marks]**
+The saving comes from eliminating kilometres, not from new trucks: *"the cleanest kilometre is often the kilometre eliminated."* Technologies: **AI route optimisation and load planning** to reach 80% utilisation; a **digital freight exchange** for backhauls (empty km 18% → 10%); **IoT telematics** for eco-driving, idling and tyre pressure (km per litre 4.0 → 4.4); then **EV trucks on renewable charging** for urban routes. Track the five slide KPIs: CO₂e per t-km, km per litre, utilisation %, empty km %, OTIF %.
+
+---
+
+## Q6 (10 marks). Choosing a DC site: distance, transport cost and facility cost 📗 ⭐⭐⭐
+A firm serves five markets (grid unit = 100 km): Jaipur (2, 9) 3,000 t · Ahmedabad (1, 6) 5,000 t · Indore (4, 6) 2,000 t · Nagpur (7, 5) 4,000 t · Hyderabad (6, 1) 6,000 t. Candidate sites and annual facility cost: **Bhopal (4, 7) ₹1.20 crore · Aurangabad (4, 4) ₹1.50 crore · Nagpur (7, 5) ₹1.10 crore**. Road freight ₹2.5 per t-km, 0.09 kg CO₂/t-km; carbon price ₹2,000/t.
+
+**Q6.1 Objective function. [1 mark]**
+**Minimise Z = Facility cost + Σ (volume × distance × ₹2.5 per t-km) + λ·CO₂.**
+
+**Q6.2 Decision variables. [1 mark]**
+**yⱼ** = 1 if site j (Bhopal, Aurangabad, Nagpur) is opened, Σyⱼ = 1; **xⱼₖ** = tonnes shipped from DC j to market k (= market demand).
+
+**Q6.3 Assumptions. [1 mark]**
+Straight-line (Euclidean) distances × 100 km; demand fixed; same inventory at every site; road only.
+
+**Q6.4 Total cost. [4 marks]**
+Centre of gravity = (83,000 ÷ 20,000, 95,000 ÷ 20,000) = **(4.15, 4.75)**.
+Load-distance (t × grid units): Bhopal **78,666**, Aurangabad **72,466**, Nagpur **80,686** (Aurangabad: Jaipur 5.385 × 3,000 + Ahmedabad 3.606 × 5,000 + Indore 2.000 × 2,000 + Nagpur 3.162 × 4,000 + Hyderabad 3.606 × 6,000).
+| ₹ crore/yr | Bhopal | Aurangabad | Nagpur |
+|---|---|---|---|
+| Transport (score × 100 km × ₹2.5) | 1.97 | **1.81** | 2.02 |
+| Facility | 1.20 | 1.50 | **1.10** |
+| CO₂ (t) | 708 | **652** | 726 |
+| Carbon cost | 0.14 | 0.13 | 0.15 |
+| **Total Z** | **3.31** | **3.44** | **3.26** |
+
+**Q6.5 Compare and select. [1 mark]**
+**Select Nagpur (₹3.26 crore)**, although Aurangabad has the shortest distance and lowest CO₂: its higher facility cost outweighs the ₹21 lakh transport saving.
+
+**Q6.6 Interpretation and technology. [2 marks]**
+Distance criteria alone would pick Aurangabad; total cost picks Nagpur, so always add facility and inventory costs. To recover the extra 74 t CO₂ and transport cost at Nagpur: **AI route optimisation and consolidation** on the long Ahmedabad and Jaipur legs, **rail for the Nagpur–Hyderabad and Nagpur–Ahmedabad trunk flows**, **IoT energy monitoring and rooftop solar** at the DC, and a **digital twin** to re-test the choice as market volumes change.
+
+---
+
+## From the course material: where to practise more 🎯
+| Exam-type item | Source | Page |
+|---|---|---|
+| Network A/B/C with objective function and λ | Lecture 8, slides 36–37 📘 | [P3 Problem 1](p3-network-logistics-numericals.md) |
+| Allocating 10,000 returns (Returns = Reuse + Repair + Reman + Recycle + Disposal) | Lecture 8, slide 37 📘 | [P3 Problem 2](p3-network-logistics-numericals.md) |
+| FMCG distribution network and five KPIs | Lecture 10, slide 12 📘 | [P3 Problem 3](p3-network-logistics-numericals.md) |
+| Consumer-electronics network design exercise | Lecture 8, slide 42 📘 | [P3 Problem 10](p3-network-logistics-numericals.md) |
+| ITC eChoupal network economics | HBS case in the zip 📘 | [P3 Problem 11](p3-network-logistics-numericals.md) |
+| Centre of gravity, load-distance, factor rating, number of DCs | 📗 | [P3 Problems 5–7](p3-network-logistics-numericals.md) |
+| Theory: objective function, decision variables, constraints | Lecture 8 📘 | [Designing the Sustainable Network](ch07-network-design.md) |
+| Technologies for sustainability (IoT, AI, blockchain, digital twin) | Lecture 9 📘 | [Technology & Quality Tools](ch05-technology-quality-tools.md) |

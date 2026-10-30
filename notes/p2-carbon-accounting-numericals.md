@@ -1,4 +1,7 @@
 # CO3 Numericals: Carbon Accounting & Scope 1, 2, 3 Emissions
+
+> 🎯 **Teacher's importants (CO3, 10 marks):** *calculate Scope 1, 2, 3 for the different scenarios given, draw a comparison table of the scopes, interpret which scenario is better at scope level and overall, then say which scope is huge and what actions mitigate it and why.* Problems tagged 🎯 match this pattern; scenario-format versions are on [CO3 10-markers](e1-co3-carbon-10-markers.md).
+
 This page covers **CO3: carbon accounting, the calculation of Scope 1, 2 and 3 emissions**. CO3 is one of the two **10-mark** COs in the 40-mark end-sem paper (Lecture 11, last slide 📘), so expect the biggest numerical here. It reproduces the **exact automotive plant case (ICEV + EV in the same plant)** from the deck *"Carbon management, carbon accounting and carbon trading"* 📘, solved line by line, plus the diesel example, GWP conversion, carbon credits, and real BRSR numbers from the **Tata Motors** and **TVS Motor** reports in your course zip 📘. Practice problems built in the same style are marked 📗. Turn on **Self-test** (`T`) to hide answers.
 
 Theory is on [LCA, Carbon Footprints & Carbon Management](ch02-lca-carbon-footprints.md).
@@ -39,7 +42,7 @@ Theory is on [LCA, Carbon Footprints & Carbon Management](ch02-lca-carbon-footpr
 
 ---
 
-## Problem 1. Automotive manufacturing — ICEV + EV in the same plant (carbon deck, slides 17–19) 📘 ⭐⭐⭐
+## Problem 1. Automotive manufacturing — ICEV + EV in the same plant (carbon deck, slides 17–19) 📘 ⭐⭐⭐ 🎯
 **Context:** one plant produces **50,000 ICE cars** and **20,000 EV cars** a year.
 
 ### Part A — Scope 1 (direct emissions, example data)
@@ -132,7 +135,7 @@ Different gases trap different amounts of heat for different lengths of time. Co
 
 ---
 
-## Problem 3. Full Scope 1-2-3 inventory for a mid-size manufacturer 📗 ⭐⭐⭐
+## Problem 3. Full Scope 1-2-3 inventory for a mid-size manufacturer 📗 ⭐⭐⭐ 🎯
 *(Practice data in the style of the course case. Factors from the course where available; others are stated assumptions.)*
 An auto-component plant in Pune produces **20,000 units** a year and records:
 - Diesel in DG sets and forklifts: 50,000 litres (2.68 kg CO₂/l)
@@ -176,7 +179,7 @@ Grid share = 60% × 4,000 = 2,400 MWh → Scope 2 = 2,400 × 0.70 = **1,680 t**.
 
 ---
 
-## Problem 4. Real BRSR numbers — TVS Motor Company, FY 2023-24 📘 ⭐⭐
+## Problem 4. Real BRSR numbers — TVS Motor Company, FY 2023-24 📘 ⭐⭐ 🎯
 From the TVS Motor BRSR in your course zip (Principle 6):
 
 | Parameter | FY 2023-24 | FY 2022-23 |
@@ -200,7 +203,7 @@ Renewable electricity share = 3,06,833.17 ÷ (3,06,833.17 + 22,499.84) = 3,06,83
 
 ---
 
-## Problem 5. Real BRSR numbers — Tata Motors Ltd (CV business, TML), FY 2024-25 📘 ⭐⭐
+## Problem 5. Real BRSR numbers — Tata Motors Ltd (CV business, TML), FY 2024-25 📘 ⭐⭐ 🎯
 From the Tata Motors integrated report BRSR (assured by KPMG):
 
 | Parameter (TML) | FY 25 | FY 24 (restated) |

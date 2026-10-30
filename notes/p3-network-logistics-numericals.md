@@ -1,4 +1,7 @@
 # CO4 Numericals: Distribution Networks, Logistics Cost & Distance Criteria
+
+> 🎯 **Teacher's importants (CO4, 10 marks):** *scenarios with different costs: find the total cost of each and select the best.* Write (1) the objective function, (2) decision variables, (3) assumptions, (4) total cost built from transport, inventory and facility costs, (5) comparison and selection, (6) interpretation and recommendations using sustainable technologies (IoT, blockchain, AI route optimisation). Problems tagged 🎯 match this pattern; six-part versions are on [CO4 10-markers](e2-co4-network-10-markers.md).
+
 This page covers **CO4: SSCM distribution networks, logistics cost and distance criteria**. CO4 is one of the two **10-mark** COs of the end-sem paper (Lecture 11 📘). It starts with the **exact problems from Lecture 8** 📘 (the network A/B/C trade-off and objective function, the 10,000-returns allocation, and the consumer-electronics network exercise) and the **Lecture 10 FMCG distribution scenario** 📘, then the standard distance-criterion methods (load-distance, centre of gravity, factor rating), transport-emission and consolidation numericals, and the ITC eChoupal network economics 📘. Practice data are marked 📗. Turn on **Self-test** (`T`) to hide answers.
 
 Theory: [Sustainable Logistics](ch06-sustainable-logistics.md) and [Designing the Sustainable Network](ch07-network-design.md).
@@ -27,7 +30,7 @@ Illustrative emission factors used below (📗, state as assumptions in the exam
 
 ---
 
-## Problem 1. Network A, B or C? (Lecture 8, slides 36–37) 📘 ⭐⭐⭐
+## Problem 1. Network A, B or C? (Lecture 8, slides 36–37) 📘 ⭐⭐⭐ 🎯
 Lecture 8's simplified sustainable network example:
 
 | Network | Cost | CO₂ | Recovery |
@@ -116,7 +119,7 @@ Per returned unit: ₹962.5 net value and 22.8 kg CO₂ avoided. The 3,000 recyc
 
 ---
 
-## Problem 3. FMCG distribution network — current situation and KPIs (Lecture 10, slide 12) 📘 ⭐⭐⭐
+## Problem 3. FMCG distribution network — current situation and KPIs (Lecture 10, slide 12) 📘 ⭐⭐⭐ 🎯
 *Scenario: an FMCG company wants to reduce the environmental impact of its distribution network.* Current situation: **10,000 deliveries per month; average distance = 180 km; diesel trucks; 62% average vehicle utilisation; 18% empty return kilometres.* The slide's five KPIs: **CO₂e per tonne-km, fuel efficiency (km per litre), vehicle utilisation %, empty km %, OTIF %.**
 
 **Assumptions to complete the numerical (📗, state them):** 9-tonne trucks; diesel trucks average **4 km per litre**; diesel 2.68 kg CO₂ per litre; diesel ₹92 per litre; "180 km" is the loaded distance per delivery; "18% empty km" is the share of *total* km run empty.
@@ -152,7 +155,7 @@ After Q3.3, 30% of 15,50,000 km = 4,65,000 km. Diesel avoided = 4,65,000 ÷ 4 = 
 
 ---
 
-## Problem 4. Road vs rail — modal shift (Lecture 8 green transportation network) 📘 concept + 📗 data ⭐⭐
+## Problem 4. Road vs rail — modal shift (Lecture 8 green transportation network) 📘 concept + 📗 data ⭐⭐ 🎯
 A Pune plant ships **1,000 t a month** to a Kolkata DC. Road route: 1,900 km. Rail route: 2,000 km plus 50 km of road drayage at each end. Factors: road 0.09, rail 0.025 kg CO₂e/t-km. Costs: road ₹3.2 per t-km; rail ₹1.6 per t-km + ₹400 per t for each terminal handling (two handlings).
 
 **Q4.1 Compare annual CO₂.**
@@ -166,7 +169,7 @@ Transit time and reliability (rail 5–7 days door-to-door vs road 3–4 days), 
 
 ---
 
-## Problem 5. Distance criteria — load-distance and centre of gravity 📗 ⭐⭐⭐
+## Problem 5. Distance criteria — load-distance and centre of gravity 📗 ⭐⭐⭐ 🎯
 A company serving four regional markets wants one central DC. Map grid units = 100 km.
 
 | Market | x | y | Annual volume (t) |
@@ -219,7 +222,7 @@ Z is cheapest but has poor rail access and high flood risk (a "cheapest location
 
 ---
 
-## Problem 7. How many DCs? Cost vs carbon trade-off 📗 ⭐⭐⭐
+## Problem 7. How many DCs? Cost vs carbon trade-off 📗 ⭐⭐⭐ 🎯
 | No. of DCs | Facility cost | Inventory cost | Inbound transport | Outbound transport | CO₂ (t/yr) |
 |---|---|---|---|---|---|
 | 1 | 4.0 | 6.0 | 2.0 | 20.0 | 5,800 |
@@ -241,7 +244,7 @@ Z = cost + p × CO₂. 30.1 crore + 4,500p = 31.4 crore + 4,075p → 425p = ₹1
 
 ---
 
-## Problem 8. Packaging cube and milk-run consolidation (Lecture 8 green packaging & route optimisation) 📘 concept + 📗 data ⭐⭐
+## Problem 8. Packaging cube and milk-run consolidation (Lecture 8 green packaging & route optimisation) 📘 concept + 📗 data ⭐⭐ 🎯
 Lecture 8: *"Packaging is not simply a procurement decision. It affects cube → vehicle utilisation → number of trips → fuel → CO₂."*
 
 **Q8.1 Right-sizing the carton raises units per truck from 800 to 1,000. Monthly volume 1,00,000 units; each trip 500 km at 4 km/l. Savings?**
@@ -260,7 +263,7 @@ Sea: 20 × 16,000 × 0.015 = **4.8 t CO₂**. Air: 20 × 8,500 × 0.60 = **102 t
 
 ---
 
-## Problem 10. Consumer-electronics network design exercise (Lecture 8, slide 42) 📘 + 📗 data ⭐⭐⭐
+## Problem 10. Consumer-electronics network design exercise (Lecture 8, slide 42) 📘 + 📗 data ⭐⭐⭐ 🎯
 *A consumer-electronics company has 3 suppliers, 2 manufacturing plants, 4 regional DCs, 10,000 customers and 20% expected product returns. It is considering one centralised recycling centre, two regional collection centres and one remanufacturing facility.* Design choices:
 
 | Decision | Option A | Option B |

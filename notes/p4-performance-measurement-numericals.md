@@ -1,4 +1,7 @@
 # CO5 Numericals: Effective Performance Measurement Systems
+
+> 🎯 **Teacher's importants (CO5, 7 marks):** *a supplier sustainability scorecard question (subjective)*: start from traditional parameters (cost, quality, delivery), add sustainable parameters (carbon reduction, environmental performance, etc.), assume weights, frame KPIs with formulas and assumptions, set targets and recommend improvements. Model scorecards are on [CO5 7-markers](e4-co5-performance-7-markers.md); the 🎯 problems here and [P1 Problem 5](p1-supplier-selection-numericals.md) are the closest course examples. The KPI formulas on this page feed the scorecard.
+
 This page covers **CO5: effective performance measurement systems**. It is a **7-mark** numerical in the end-sem paper, and it is also one of the two COs in the **20-mark online quiz** (CO5 + CO6, from PPTs 9, 10 and 11) 📘. The numericals come from **Lecture 3** (the performance dashboard and the performance management framework), **Lecture 10** (KPI architecture, SCOR + sustainability KPIs, quality as sustainability, the FMCG 5-KPI exercise, Company A vs B) and **Lecture 9** (Technology Adoption Score, Net Technology Value and the Navya exercise) 📘. Practice data are marked 📗. Turn on **Self-test** (`T`) to hide answers.
 
 Theory: [Measuring Sustainable SC Performance](ch08-performance-measurement.md) and [Technology & Quality Tools](ch05-technology-quality-tools.md).
@@ -121,7 +124,7 @@ Not necessarily. Lecture 10's "KPI trap" warns that more KPIs do not mean better
 - On-time delivery: 89% → 96.2%, a gain of about **7 percentage points**.
 Both environmental and safety improvements came with better delivery and margin, which supports the Lecture 3 claim that sustainability and business performance can move together.
 
-## Problem 4. Sustainability balanced scorecard with weighted achievement 📗 ⭐⭐⭐
+## Problem 4. Sustainability balanced scorecard with weighted achievement 📗 ⭐⭐⭐ 🎯
 A logistics company uses a Sustainability Balanced Scorecard with these KPIs, targets and weights:
 
 | KPI | Actual | Target | Better | Weight |
@@ -158,7 +161,7 @@ The headline hides that **four of eight KPIs are below target**, including the s
 - Internal process: CO₂/t-km, energy intensity, waste recycling, supplier audit score (Lecture 10: carbon intensity, supplier quality, circularity).
 - Learning and growth: none here. That is a gap; add ESG skills or training hours, innovation or employee engagement (Lecture 10 examples) and LTIFR could sit with people as well.
 
-## Problem 5. Five KPIs for the FMCG distribution network (Lecture 10, slide 12) 📘 ⭐⭐⭐
+## Problem 5. Five KPIs for the FMCG distribution network (Lecture 10, slide 12) 📘 ⭐⭐⭐ 🎯
 Lecture 10's exercise: *An FMCG company wants to reduce the environmental impact of its distribution network. Current situation: 10,000 deliveries/month, average distance 180 km, diesel trucks, 62% average vehicle utilisation, 18% empty return kilometres. Develop 5 KPIs.* The slide's answer: **1) Carbon → CO₂e per tonne-km; 2) Cost → fuel efficiency (km per litre); 3) Utilisation → vehicle utilisation %; 4) Empty km → empty km %; 5) Reliability → OTIF %.**
 
 **Q5.1 For each KPI write the formula, the baseline and a SMART target.**
@@ -322,7 +325,7 @@ A retailer scores six technologies (1–5, cut-off 3 = "high"):
 **Q12.2 Compute TAS for AI route optimisation with scores Economic 5, Environmental 4, Social 3, Resilience 3, Strategic fit 4.**
 TAS = 0.25 × 5 + 0.25 × 4 + 0.20 × 3 + 0.15 × 3 + 0.15 × 4 = 1.25 + 1.00 + 0.60 + 0.45 + 0.60 = **3.90**.
 
-## Problem 13. Make a KPI SMART and run the five tests (Lecture 10) 📘 ⭐⭐
+## Problem 13. Make a KPI SMART and run the five tests (Lecture 10) 📘 ⭐⭐ 🎯
 Lecture 10's five tests for a KPI set: **material, balanced, actionable, comparable, credible.** Its closing line: *"If a KPI does not change a decision, question why it exists."*
 
 **Q13.1 Rewrite "Be more sustainable in logistics" as a SMART KPI.**

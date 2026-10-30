@@ -19,10 +19,10 @@ In-depth notes for the **Sustainable Supply Chain Management (SSCM)** end-semest
 | CO | What to expect | Marks (teacher's pattern) | Where to practise |
 |---|---|---|---|
 | **CO1** | 3-mark short theory: SSCM, TBL, strategy, business performance | **3** | [Ch 1](ch01-sscm-business-performance.md), [Q&A Bank](exam-questions-qna.md) |
-| **CO2** | **Numerical: weighted scoring of suppliers** (+ scorecard, TOPSIS, risk matrix, interpretation) | **7** | [P1 Supplier Selection](p1-supplier-selection-numericals.md) |
-| **CO3** | **Numerical: carbon accounting, Scope 1, 2, 3** (+ GWP, credits, net zero) | **10** | [P2 Carbon Accounting](p2-carbon-accounting-numericals.md) |
+| **CO2** | **Numerical: weighted scoring of suppliers** (weighted average only, no TOPSIS; select and justify) | **7** | [P1 Supplier Selection](p1-supplier-selection-numericals.md) |
+| **CO3** | **Numerical: carbon accounting, Scope 1, 2, 3** for different scenarios, with a comparison table, verdict and mitigation | **10** | [P2 Carbon Accounting](p2-carbon-accounting-numericals.md) |
 | **CO4** | **Numerical: SSCM network design** (distribution networks, logistics cost, distance criteria) | **10** | [P3 Network & Logistics](p3-network-logistics-numericals.md) |
-| **CO5** | **Numerical: effective performance measurement systems** (KPIs, OEE, dashboards, TAS) | **7** | [P4 Performance Measurement](p4-performance-measurement-numericals.md) |
+| **CO5** | **Numerical: effective performance measurement systems**: a supplier sustainability scorecard (weights, KPIs, targets) | **7** | [P4 Performance Measurement](p4-performance-measurement-numericals.md) |
 | **CO6** | 3-mark short theory: technology, quality, best practices, future transitions | **3** | [Ch 5](ch05-technology-quality-tools.md), [Ch 10](ch10-sscm-best-practices.md) |
 
 - **End-sem**: 40 marks, pen and paper = CO3 10 + CO4 10 + CO2 7 + CO5 7 + CO1 3 + CO6 3. The **[Exam Focus](exam-focus.md)** tab has questions in exactly this format with marks splits and model answers. CO2–CO5 are mainly numericals, with theory, interpretation and application sub-questions inside them.
@@ -41,7 +41,7 @@ Every numerical that appears in the slides is reproduced as the **exact problem 
 | Day | Morning | Afternoon | Evening |
 |---|---|---|---|
 | 1 | Ch 2 carbon + **P2 Carbon Accounting** (do the auto-plant case by hand) | Ch 6–7 logistics and network + **P3** Problems 1–5 | P3 Problems 6–11, MCQs on Lectures 4–8 |
-| 2 | Ch 3 procurement + **P1 Supplier Selection** (weighted score, VoltTech, TOPSIS) | Ch 8 + **P4 Performance Measurement** Problems 1–7 | P4 Problems 8–13 (TAS, Navya) |
+| 2 | Ch 3 procurement + **P1 Supplier Selection** (weighted score, VoltTech, laptop suppliers) | Ch 8 + **P4 Performance Measurement** Problems 1–7 | P4 Problems 8–13 (TAS, Navya) |
 | 3 | **Quiz prep**: Lectures 9, 10, 11 (Ch 5, Ch 8, Ch 10) + MCQ Q1–Q120 | Ch 1 and Ch 4 + CO1 3-markers | Ch 9 energy + P5 LCA & Energy |
 | 4 | Redo every ⭐⭐⭐ numerical once, without looking | Case studies + Q&A bank long answers | Rapid revision, glossary flashcards |
 

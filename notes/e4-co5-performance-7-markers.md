@@ -1,136 +1,203 @@
-# CO5 · 7-Mark Numericals: SSCM Effective Performance Measurement Systems
-Your teacher's pattern: **CO5 = 7 marks, a numerical on SSCM effective performance measurement systems**. Expect KPI calculations (OTIF, fill rate, perfect order, OEE, carbon and energy intensity, LTIFR), a scorecard or dashboard with targets, and an interpretation part (leading vs lagging, SMART, the five tests). This page has six full 7-mark questions with marks splits and model answers. Q3 and Q5 build on the course's own Lecture 3 dashboard and Lecture 9 TAS/NTV 📘; the rest are practice questions in the same style 📗. Turn on **Self-test** (`T`) to hide the answers.
+# CO5 · 7-Mark Numericals: Supplier Sustainability Scorecard
+**What the exam asks (teacher's importants):** *a supplier sustainability scorecard question. The answer is subjective; you can apply any logic.* A scenario is given with **traditional supply chain parameters (cost, quality, delivery)**. You must:
+1. **Include sustainable supply chain parameters** (carbon reduction, environmental performance, etc.)
+2. **Assume weights** for each parameter
+3. **Frame KPIs** to measure them (with formulas where possible) and **state your assumptions**
+4. **Set target levels** for the KPIs and give a **short recommendation on how to improve** each KPI
 
-Full theory and more problems: [Performance Measurement Numericals](p4-performance-measurement-numericals.md) · [Measuring SSCM Performance](ch08-performance-measurement.md).
+Because the answer is subjective, marks go to a **complete, logical, well-laid-out scorecard**, not to one "right" number. Every question below gives a full model scorecard. Q1 is built on the course's Lecture 10 supplier sustainability scorecard 📘; Q2–Q4 are practice scenarios 📗. Turn on **Self-test** (`T`) to hide the answers.
 
 ---
 
-## How a 7-mark performance answer earns its marks ⭐⭐⭐
-| Step | What to write | Marks it usually carries |
+## The 7-mark answer template ⭐⭐⭐
+| Part | What to write | Marks |
 |---|---|---|
-| 1. Formula | The KPI definition, in words or symbols | 1 |
-| 2. Calculate | Substitution and value with units (%, per unit, per million hours) | 3 |
-| 3. Compare | Against target or benchmark: achievement = actual ÷ target (higher-better) or target ÷ actual (lower-better) | 1 |
-| 4. Interpret | Leading or lagging, root cause, owner, the decision it changes | 1–2 |
-| 5. Improve | One corrective action per weak KPI | 1 |
+| 1. Parameters | Keep cost, quality, delivery; **add** carbon reduction, environmental performance (energy, water, waste), social (labour, safety, human rights), governance/compliance, and optionally circularity, traceability, innovation, resilience | 1 |
+| 2. Weights | Weights that total **100%**; justify in one line (for example, traditional 50–55%, sustainability 45–50%) | 1 |
+| 3. KPIs and formulas | One measurable KPI per parameter with a formula and unit | 2 |
+| 4. Assumptions | Data source, period, scoring rule (achievement = actual ÷ target or target ÷ actual, capped at 100), minimum thresholds | 0.5 |
+| 5. Targets | A target level per KPI (and the current level, if you assume one) | 1 |
+| 6. Recommendations | One improvement action per weak KPI; who owns it | 1.5 |
+Optional but impressive: compute the **weighted score** from assumed actuals, before and after adding sustainability.
 
-**Formulas:** OTIF = orders on time **and** in full ÷ total orders · fill rate = units shipped ÷ units ordered · perfect order ≈ OTIF × damage-free × correct documents · **OEE = Availability × Performance × Quality** · carbon intensity = t CO₂e ÷ output or ÷ ₹ crore · **LTIFR = lost-time injuries × 10⁶ ÷ person-hours** · composite index = Σ weight × capped achievement · required annual improvement = 1 − (target ÷ current)^(1/n) · **TAS** = 0.25 Econ + 0.25 Env + 0.20 Social + 0.15 Resilience + 0.15 Strategic fit · **NTV** = gross benefits − adoption cost − lifecycle sustainability cost − risk cost.
+**Scoring rule to state:** KPI score = (actual ÷ target) × 100 for higher-is-better, (target ÷ actual) × 100 for lower-is-better, capped at 100. **Weighted score = Σ weight × KPI score.** Bands: ≥ 90 A (preferred), 75–89 B (approved, develop), 60–74 C (conditional), < 60 D (exit). **Knock-out:** any child or forced labour, a fatal accident or a major legal violation → not eligible regardless of score.
 
----
-
-## Q1 (7 marks). Customer service KPIs for a DC 📗 ⭐⭐⭐
-In a month a DC shipped **1,200 orders**: 1,104 on time, 1,140 in full, **1,068 both on time and in full**, 1,182 damage-free and 1,188 with correct documents. Customers ordered 36,000 units; 35,100 were shipped from stock.
-(a) Compute on-time %, in-full %, OTIF %, fill rate and perfect-order rate. (4) (b) Why is OTIF not equal to OT% × IF%? (1) (c) Interpret and suggest actions. (2)
-
-**Q1.1 (a) KPIs. [4 marks]**
-On-time = 1,104 ÷ 1,200 = **92.0%** · In-full = 1,140 ÷ 1,200 = **95.0%** · **OTIF = 1,068 ÷ 1,200 = 89.0%** · Fill rate = 35,100 ÷ 36,000 = **97.5%** · Perfect order = 0.890 × (1,182 ÷ 1,200) × (1,188 ÷ 1,200) = 0.890 × 0.985 × 0.990 = **86.8%** (assuming damage and documents are independent of OTIF).
-
-**Q1.2 (b) OTIF vs the product. [1 mark]**
-92.0% × 95.0% = 87.4%, but the actual joint count is 89.0% because late orders and short orders often **overlap** (the same problem orders fail both). Always use the joint count when it is given.
-
-**Q1.3 (c) Interpretation. [2 marks]**
-Fill rate (97.5%) looks excellent, but **more than one order in eight is not perfect**: each failure means a re-delivery trip, a return or damaged goods, which is a cost *and* an emissions problem. Lateness is the biggest gap (8% late): fix dispatch cut-offs and carrier reliability; then packaging (1.5% damage) and invoicing errors. Report **OTIF and perfect order**, not fill rate alone.
-
----
-
-## Q2 (7 marks). OEE, intensity and safety for a plant 📗 ⭐⭐⭐
-A plant runs **two 8-hour shifts** (960 minutes planned). Breakdowns and changeovers take **90 minutes**. Ideal cycle time is **1.2 minutes** per unit; the day's output was **700 units**, of which **665 were good**. Annual data: 9,600 t CO₂e (Scope 1 + 2), 4.8 lakh units, revenue ₹1,200 crore, energy 52,000 GJ, water 1,44,000 kL, 1,500 employees × 2,000 hours, 3 lost-time injuries.
-(a) Compute OEE. (3) (b) Compute carbon, energy and water intensity and LTIFR. (3) (c) Interpret. (1)
-
-**Q2.1 (a) OEE. [3 marks]**
-Run time = 960 − 90 = 870 min. Availability = 870 ÷ 960 = **90.6%**. Performance = (1.2 × 700) ÷ 870 = 840 ÷ 870 = **96.6%**. Quality = 665 ÷ 700 = **95.0%**. **OEE = 0.906 × 0.966 × 0.950 = 83.1%**, just below the ~85% world-class benchmark.
-
-**Q2.2 (b) Intensity and safety. [3 marks]**
-Carbon = 9,600 ÷ 1,200 = **8.0 t CO₂e per ₹ crore**, or 96,00,000 kg ÷ 4,80,000 = **20 kg per unit**. Energy = 52,000 GJ ÷ 4,80,000 = **108 MJ per unit**. Water = 1,44,000 kL ÷ 4,80,000 = **0.30 kL (300 litres) per unit**. **LTIFR = 3 × 10⁶ ÷ (1,500 × 2,000) = 3 × 10⁶ ÷ 30,00,000 = 1.0** per million hours.
-
-**Q2.3 (c) Interpretation. [1 mark]**
-The biggest OEE loss is **availability** (90.6%): predictive maintenance and SMED changeovers would raise output *and* cut idle energy. The 5% scrap is also an environmental loss (materials, energy, landfill): *quality failure = environmental failure*. Normalised intensities let the plant compare itself across years and with peers even as volume grows.
+### KPI bank (pick from here) ⭐⭐⭐
+| Parameter | KPI | Formula | Typical target 📗 |
+|---|---|---|---|
+| Cost | Price competitiveness index | (benchmark price ÷ supplier price) × 100 | ≥ 100 |
+| Cost | Total cost of ownership per unit | (price + freight + quality cost + inventory cost) ÷ units | ≤ benchmark |
+| Quality | Defect rate (PPM) | defective units ÷ units supplied × 10⁶ | ≤ 500 PPM |
+| Quality | First-pass yield | units accepted first time ÷ units received × 100 | ≥ 99% |
+| Delivery | OTIF % | orders on time **and** in full ÷ total orders × 100 | ≥ 95–98% |
+| Delivery | Lead-time adherence | deliveries within agreed lead time ÷ total × 100 | ≥ 95% |
+| Carbon | Carbon intensity | kg CO₂e (Scope 1 + 2) ÷ unit supplied | −10% a year |
+| Carbon | Carbon reduction % | (base-year CO₂e − current) ÷ base-year × 100 | ≥ 10% a year |
+| Energy | Renewable energy share | RE kWh ÷ total kWh × 100 | ≥ 50% |
+| Water | Water intensity | kL ÷ unit (or ÷ tonne) | −5% a year |
+| Waste | Waste diverted from landfill | (waste recycled + reused) ÷ total waste × 100 | ≥ 80–90% |
+| Circularity | Recycled content | recycled input (kg) ÷ total input × 100 | ≥ 30% |
+| Environment | ISO 14001 certification / environmental NCs | yes/no; non-conformities per audit | certified; 0 major NCs |
+| Social | LTIFR | lost-time injuries × 10⁶ ÷ person-hours worked | ≤ 0.5 |
+| Social | Labour audit compliance | audit points passed ÷ total points × 100 | 100% (no critical findings) |
+| Social | Living-wage / training | % workers at living wage; training hours per worker | 100%; ≥ 20 h/yr |
+| Governance | Compliance incidents | number of legal/regulatory violations | 0 |
+| Governance | ESG disclosure | data fields reported ÷ fields requested × 100 | 100% (BRSR-style) |
+| Traceability | Traceable volume | volume traced to origin ÷ total volume × 100 | ≥ 90% |
+| Innovation | Sustainability improvement projects | number of joint projects per year | ≥ 4 |
+| Resilience | Single-source dependency | spend with single-source items ÷ total spend × 100 | ≤ 20% |
 
 ---
 
-## Q3 (7 marks). Reading the Lecture 3 dashboard 📘 ⭐⭐⭐
-Lecture 3's dashboard shows: CO₂ per t-km **62.3** (8.7% below target), LTIFR **0.68** (15% below target), on-time delivery **96.2%** (+3.2 points), cost per shipment **$96.4** (3.6% below target). Trend Jan → Jun: CO₂/t-km about 78 → 62.3; LTIFR about 1.4 → 0.68.
-(a) Back-calculate the four targets. (3) (b) Compute the six-month improvement in CO₂/t-km and LTIFR. (2) (c) All KPIs are green: is that good news? (2)
+## Q1 (7 marks). Upgrade a traditional supplier scorecard (Lecture 10 supplier sustainability scorecard) 📘 + 📗 ⭐⭐⭐ 🎯
+*Scenario:* An auto-component OEM rates its suppliers only on **Cost (40%), Quality (35%) and Delivery (25%)**. Supplier K's current performance: price 2% above benchmark, 650 PPM defects, OTIF 93%. The OEM's customers now ask for carbon and human-rights data. Redesign the scorecard as a supplier sustainability scorecard: add sustainable parameters with weights, frame KPIs with formulas, state assumptions, set targets and recommend improvements.
 
-**Q3.1 (a) Targets. [3 marks]**
-CO₂/t-km target = 62.3 ÷ (1 − 0.087) = **68.2 g**. LTIFR target = 0.68 ÷ 0.85 = **0.80**. On-time target = 96.2 − 3.2 = **93.0%**. Cost target = 96.4 ÷ 0.964 = **$100**. (Assumption: % variance on an absolute KPI = relative change; on a % KPI = percentage points.)
+**Q1.1 Parameters and weights. [2 marks]**
+Using the Lecture 10 structure (traditional 55%, sustainability 45%):
+| Parameter | Weight | Why |
+|---|---|---|
+| Cost competitiveness | 20% | Still essential, but no longer dominant |
+| Quality | 20% | Defects waste material, energy and transport |
+| Delivery | 15% | Service to the assembly line |
+| **Environmental performance** | 15% | Energy, water, waste at the supplier's plant |
+| **Labour & human rights** | 10% | Legal and brand risk; minimum threshold applies |
+| **Carbon reduction** | 10% | Supplier emissions are our Scope 3 Category 1 |
+| **Governance** | 5% | Compliance, transparency, data |
+| **Innovation** | 5% | Joint improvement projects |
+| **Total** | **100%** | |
 
-**Q3.2 (b) Improvement. [2 marks]**
-CO₂/t-km: (78 − 62.3) ÷ 78 = **≈ 20% reduction**. LTIFR: (1.4 − 0.68) ÷ 1.4 = **≈ 51% reduction**. Both came with better delivery and margin: sustainability and business performance moved together.
-
-**Q3.3 (c) All green? [2 marks]**
-Not necessarily. All 24 KPIs beating target suggests **soft targets** (set from last year's actuals) or easy KPIs: the **KPI trap**. Compare with **external benchmarks** or science-based targets, not only internal targets; check that each KPI has an owner and changes a decision; and apply the **five tests** (material, balanced, actionable, comparable, credible).
-
----
-
-## Q4 (7 marks). Sustainability balanced scorecard with a composite index 📗 ⭐⭐⭐
-| KPI | Actual | Target | Better | Weight |
+**Q1.2 KPIs, formulas, current levels (assumed) and targets. [3 marks]**
+| Parameter | KPI and formula | Current (assumed) | Target | KPI score |
 |---|---|---|---|---|
-| Logistics cost % of sales | 8.4 | 8.0 | Lower | 20% |
-| OTIF % | 94.0 | 95.0 | Higher | 20% |
-| CO₂ kg per unit | 1.80 | 2.00 | Lower | 20% |
-| Renewable energy share % | 45 | 40 | Higher | 15% |
-| Waste recycled % | 72 | 80 | Higher | 10% |
-| LTIFR | 0.50 | 0.40 | Lower | 15% |
+| Cost | Price index = benchmark ÷ supplier price × 100 | 98 | 100 | 98.0 |
+| Quality | Defect PPM = defects ÷ units × 10⁶ | 650 | ≤ 500 | 500/650 = 76.9 |
+| Delivery | OTIF % = on time & in full orders ÷ total × 100 | 93% | 97% | 95.9 |
+| Environmental | Waste diverted % = recycled + reused ÷ total waste × 100 | 60% | 80% | 75.0 |
+| Labour & HR | Social audit compliance % = points passed ÷ total × 100 | 85% | 100% | 85.0 |
+| Carbon | kg CO₂e per unit = Scope 1 + 2 ÷ units supplied | 2.4 | 2.0 | 2.0/2.4 = 83.3 |
+| Governance | ESG disclosure % = fields reported ÷ fields requested × 100 | 70% | 100% | 70.0 |
+| Innovation | Joint sustainability projects per year | 2 | 4 | 50.0 |
+**Assumptions:** data for the last 12 months from the supplier portal, social audit by a third party, carbon from the supplier's energy bills × CEA grid factor (0.70 kg/kWh) and diesel × 2.68 kg/l; KPI score capped at 100; any critical labour finding is a knock-out.
 
-(a) Compute each achievement ratio (cap 1.2) and the composite index. (4) (b) Interpret. (2) (c) Classify each KPI as leading or lagging. (1)
+*Weighted score:* 0.20×98.0 + 0.20×76.9 + 0.15×95.9 + 0.15×75.0 + 0.10×85.0 + 0.10×83.3 + 0.05×70.0 + 0.05×50.0 = 19.60 + 15.38 + 14.38 + 11.25 + 8.50 + 8.33 + 3.50 + 2.50 = **83.4 → Band B**. On the old cost-quality-delivery card the same supplier scored 0.40×98 + 0.35×76.9 + 0.25×95.9 = **90.1 (Band A)**: the sustainability scorecard reveals gaps the old card hid.
 
-**Q4.1 (a) Ratios and index. [4 marks]**
-| KPI | Ratio | × weight |
+**Q1.3 Recommendations. [2 marks]**
+- **Quality (76.9):** joint Six Sigma (DMAIC) project on the top two defect causes; poka-yoke at final inspection. Owner: supplier quality engineer.
+- **Carbon (83.3) and environment (75):** energy audit, rooftop solar or a green-power PPA, compressed-air leak fixes; segregate waste streams with authorised recyclers. Share a carbon-reduction roadmap (−10% a year).
+- **Governance (70) and innovation (50):** require BRSR-style ESG data every quarter; hold two supplier sustainability workshops a year and co-fund one improvement project.
+- **Link the score to business:** Band A suppliers get a larger share of volume and longer contracts (*"supplier ESG performance must affect purchasing decisions"*, Lecture 10).
+
+---
+
+## Q2 (7 marks). FMCG packaging supplier 📗 ⭐⭐⭐
+*Scenario:* An FMCG company buys plastic and paper packaging. Its current scorecard: Cost 50%, Quality 30%, Delivery 20%. India's **EPR rules for plastic packaging** require recycled content and collection. Design a supplier sustainability scorecard.
+
+**Q2.1 Parameters and weights. [2 marks]**
+| Parameter | Weight |
+|---|---|
+| Cost | 25% |
+| Quality (print, seal and strength defects) | 15% |
+| Delivery | 15% |
+| **Recycled content / circularity** | 15% |
+| **Carbon reduction** | 10% |
+| **Recyclability of design** | 10% |
+| **Environmental performance (energy, water, waste)** | 5% |
+| **Social compliance** | 5% |
+| **Total** | **100%** |
+(Circularity gets the largest sustainability weight because EPR makes it a legal requirement.)
+
+**Q2.2 KPIs, formulas and targets. [3 marks]**
+| Parameter | KPI and formula | Target |
 |---|---|---|
-| Logistics cost | 8.0 ÷ 8.4 = 0.952 | 0.190 |
-| OTIF | 94 ÷ 95 = 0.989 | 0.198 |
-| CO₂/unit | 2.00 ÷ 1.80 = 1.111 | 0.222 |
-| RE share | 45 ÷ 40 = 1.125 | 0.169 |
-| Waste recycled | 72 ÷ 80 = 0.900 | 0.090 |
-| LTIFR | 0.40 ÷ 0.50 = 0.800 | 0.120 |
-| **Composite index** | | **0.989 (98.9%)** |
+| Cost | TCO per 1,000 packs = (price + freight + rejection cost) ÷ packs × 1,000 | ≤ ₹ benchmark |
+| Quality | Rejection rate % = rejected lots ÷ lots received × 100 | ≤ 0.5% |
+| Delivery | OTIF % | ≥ 97% |
+| Recycled content | Post-consumer recycled (PCR) content % = PCR resin kg ÷ total resin kg × 100 | ≥ 30% (rising with EPR) |
+| Carbon | kg CO₂e per 1,000 packs = (Scope 1 + 2 of supplier) ÷ output × 1,000 | −10% a year |
+| Recyclability | Mono-material share % = mono-material SKUs ÷ total SKUs × 100 | ≥ 80% |
+| Environmental | Waste diverted from landfill % | ≥ 90% |
+| Social | Social audit score % (wages, hours, safety) | 100%, no critical findings |
+**Assumptions:** 12-month data; PCR content verified by certificates from registered recyclers; carbon from the supplier's energy data; scoring = actual ÷ target, capped at 100.
 
-**Q4.2 (b) Interpretation. [2 marks]**
-The index is close to target, but it **hides that four of six KPIs miss target**, including **safety (LTIFR 25% worse)**, the worst result. Strong carbon and renewable figures offset it. Fix: a **minimum threshold** for safety and human-rights KPIs (red regardless of the index) and reporting by perspective, not one number. Actions: safety walks and near-miss reporting, segregated waste streams with recycler contracts, route consolidation for logistics cost.
-
-**Q4.3 (c) Leading vs lagging. [1 mark]**
-Lagging: logistics cost %, OTIF, CO₂/unit, waste recycled, LTIFR (results). Leading: **renewable energy share** (drives future CO₂). Add leading KPIs such as safety-training hours and supplier audits completed.
-
----
-
-## Q5 (7 marks). Technology Adoption Score and Net Technology Value (Lecture 9 method) 📘 + 📗 ⭐⭐⭐
-A logistics firm evaluates an IoT + AI route-optimisation system: investment **₹12 crore**; gross benefits **₹6.5 crore a year** (fuel, fewer trips, less waste); operating cost ₹1.2 crore; lifecycle sustainability cost (devices, e-waste, data-centre energy) ₹0.3 crore; expected risk cost (cyber, adoption failure) ₹0.5 crore a year; 5 years at 10%. Scores (1–5): economic 4, environmental 5, social 3, resilience 3, strategic fit 4.
-(a) Compute TAS. (2) (b) Compute annual NTV, 5-year NPV and payback. (3) (c) Adopt, pilot or reject? (2)
-
-**Q5.1 (a) TAS. [2 marks]**
-0.25 × 4 + 0.25 × 5 + 0.20 × 3 + 0.15 × 3 + 0.15 × 4 = 1.00 + 1.25 + 0.60 + 0.45 + 0.60 = **3.90 / 5**.
-
-**Q5.2 (b) NTV, NPV, payback. [3 marks]**
-Annual net = 6.5 − 1.2 − 0.3 − 0.5 = **₹4.5 crore**. Annuity factor (10%, 5 yr) = 3.791 → NPV = 4.5 × 3.791 − 12 = **₹5.06 crore**. Simple 5-year NTV = 5 × 4.5 − 12 = **₹10.5 crore**. Payback = 12 ÷ 4.5 = **2.7 years**.
-
-**Q5.3 (c) Decision. [2 marks]**
-High business value and high sustainability impact → the **"Prioritise"** quadrant of the decision matrix; TAS 3.9 and a positive NPV support **adoption, staged through a short pilot** to confirm the fuel savings (break-even needs net ≥ ₹3.17 crore, i.e. gross ≥ ₹5.17 crore, 80% of promised benefits). Track leading KPIs: km per delivery, utilisation, empty km, g CO₂/t-km, and system energy use. *"Technology is an enabler, not a sustainability strategy."*
+**Q2.3 Recommendations. [2 marks]**
+Move multi-layer laminates to **mono-material** designs (recyclable), co-invest with the supplier in PCR resin sourcing, **lightweight** films and cartons (less material, carbon and freight), share demand forecasts so the supplier can run full batches (less waste), and require ISO 14001 within 12 months. Reward Band A suppliers with longer contracts.
 
 ---
 
-## Q6 (7 marks). Benchmarking gap and required rate of improvement (Lecture 3) 📗 ⭐⭐
-A firm's carbon intensity is **0.95 kg CO₂e per unit**; the best-in-class benchmark is **0.60**. It wants to close the gap in **5 years**.
-(a) Compute the gap. (1) (b) Compute the required annual reduction. (2) (c) At the current pace of 6% a year, how long will it take? (2) (d) Write the KPI as a SMART target. (2)
+## Q3 (7 marks). Logistics service provider (carrier) scorecard 📗 ⭐⭐⭐
+*Scenario:* A retailer evaluates its road carriers on Cost per shipment (50%), On-time delivery (30%) and Damage rate (20%). It wants a sustainable carrier scorecard.
 
-**Q6.1 (a) Gap. [1 mark]**
-(0.95 − 0.60) ÷ 0.60 = **58.3% above the benchmark**.
+**Q3.1 Parameters and weights. [2 marks]**
+| Parameter | Weight |
+|---|---|
+| Cost per shipment | 25% |
+| On-time delivery (service) | 20% |
+| Damage / claims (quality) | 10% |
+| **Carbon intensity** | 15% |
+| **Fleet efficiency (utilisation, empty km)** | 10% |
+| **Clean fleet share (EV, CNG, LNG, BS-VI)** | 10% |
+| **Driver safety and welfare** | 10% |
+| **Total** | **100%** |
 
-**Q6.2 (b) Required annual reduction. [2 marks]**
-1 − (0.60 ÷ 0.95)^(1/5) = 1 − 0.9122 = **8.8% a year** (compounded).
+**Q3.2 KPIs, formulas and targets. [3 marks]**
+| Parameter | KPI and formula | Current (assumed) | Target |
+|---|---|---|---|
+| Cost | Cost per t-km = total freight bill ÷ t-km | ₹3.0 | ₹2.8 |
+| Service | On-time % = shipments delivered by promised time ÷ total × 100 | 91% | ≥ 96% |
+| Quality | Damage rate % = shipments with damage ÷ total × 100 | 1.2% | ≤ 0.5% |
+| Carbon | g CO₂e per t-km = (litres × 2.68 × 1,000) ÷ t-km | 120 | ≤ 95 |
+| Efficiency | Vehicle utilisation % = load carried ÷ capacity × 100; empty km % = empty km ÷ total km × 100 | 65%; 20% | ≥ 80%; ≤ 10% |
+| Clean fleet | Clean-fuel vehicles ÷ total fleet × 100 | 10% | ≥ 30% in 3 years |
+| Safety | Accidents per million km; driver rest-hour compliance % | 0.8; 85% | ≤ 0.3; 100% |
+**Assumptions:** fuel data from fuel cards or telematics; t-km from shipment records; diesel factor 2.68 kg/l; monthly review.
 
-**Q6.3 (c) At 6% a year. [2 marks]**
-n = ln(0.60 ÷ 0.95) ÷ ln(0.94) = (−0.4595) ÷ (−0.0619) = **≈ 7.4 years**: the current pace is about 2.4 years too slow.
-
-**Q6.4 (d) SMART target. [2 marks]**
-"Reduce **Scope 1 + 2 carbon intensity** from 0.95 to **0.60 kg CO₂e per unit** by **FY 2031** (−8.8% a year), owned by the **plant head**, measured monthly from metered energy data with DEFRA/CEA factors and verified annually under **BRSR Core**." Specific, measurable, achievable (with RE + efficiency), relevant (CBAM and buyer requirements), time-bound.
+**Q3.3 Recommendations. [2 marks]**
+Use **AI route optimisation and load consolidation** to raise utilisation and cut cost and CO₂ per t-km together; join a **freight exchange** for backhauls (empty km 20% → 10%); **telematics** for eco-driving and driver-fatigue alerts; switch urban routes to **EV/CNG** with green charging; better packaging and loading training to cut damage. *"The cleanest kilometre is often the kilometre eliminated."*
 
 ---
 
-## Quick checklist before you hand in a CO5 answer ⭐⭐⭐
-- Formula written **before** the numbers?
-- Lower-is-better KPIs inverted (target ÷ actual) in any scorecard?
-- Units: %, per unit, per ₹ crore, per **million** person-hours?
-- Compared with a **target or benchmark**, not just stated?
-- One line on **leading vs lagging**, the **owner** and the **decision** the KPI changes?
-- If a composite index looks fine, did you check for **hidden failures** (safety, human rights)?
+## Q4 (7 marks). Apparel supplier exporting to Europe 📗 ⭐⭐
+*Scenario:* A garment brand sources from Tiruppur factories, scored today on Price (45%), Quality (35%) and Delivery (20%). European buyers now demand carbon, water and human-rights due diligence. Build the sustainability scorecard.
+
+**Q4.1 Parameters and weights. [2 marks]**
+| Parameter | Weight |
+|---|---|
+| Price | 20% |
+| Quality | 15% |
+| Delivery | 15% |
+| **Labour & human rights** | 15% (plus a knock-out threshold) |
+| **Water and chemicals** | 10% |
+| **Carbon reduction** | 10% |
+| **Traceability (fibre to garment)** | 10% |
+| **Circularity (recycled/organic fibre)** | 5% |
+| **Total** | **100%** |
+
+**Q4.2 KPIs, formulas and targets. [3 marks]**
+| Parameter | KPI and formula | Target |
+|---|---|---|
+| Price | Price index vs benchmark | ≥ 100 |
+| Quality | AQL pass rate % = lots passed ÷ lots inspected × 100 | ≥ 98% |
+| Delivery | On-time shipment % (ex-factory) | ≥ 95% |
+| Labour & HR | Social audit score %; % workers paid living wage; overtime ≤ legal limit % | 100%, no critical findings |
+| Water | Water intensity = litres ÷ kg of fabric processed; ZLD (zero liquid discharge) in place | −20% in 2 years; ZLD yes |
+| Chemicals | % chemicals compliant with the restricted substances list | 100% |
+| Carbon | kg CO₂e per garment = (Scope 1 + 2) ÷ garments; RE share % | −10% a year; ≥ 40% RE |
+| Traceability | % volume traced to spinner and farm = traced kg ÷ total kg × 100 | ≥ 90% |
+| Circularity | Recycled or organic fibre % = such fibre kg ÷ total fibre kg × 100 | ≥ 25% |
+**Assumptions:** third-party audits (for example SA8000-style), water meters at the dyeing unit, carbon from energy bills; any child or forced labour = immediate disqualification.
+
+**Q4.3 Recommendations. [2 marks]**
+Fund **ZLD and water recycling** at dyeing units (Arvind's 100% recycled water is the course example); **blockchain or digital traceability** from cotton farm to garment for EU due-diligence rules and the Digital Product Passport; rooftop solar for carbon; worker grievance hotlines and living-wage roadmaps; give A-band factories longer orders and fair lead times so they are not pushed to cut corners (*"do not outsource sustainability"*).
+
+---
+
+## From the course material: where to practise more 🎯
+| Exam-type item | Source | Page |
+|---|---|---|
+| Supplier sustainability scorecard (8 dimensions and weights) | Lecture 10, slide 12 📘 | [P1 Problem 5](p1-supplier-selection-numericals.md) · [Measuring SSCM Performance](ch08-performance-measurement.md) |
+| VoltTech supplier scorecard (cost, quality, delivery + carbon, safety, innovation, compliance) | Lecture 6, slide 22 📘 | [P1 Problem 2](p1-supplier-selection-numericals.md) |
+| Five KPIs for the FMCG distribution network | Lecture 10, slide 12 📘 | [P4 Problem 5](p4-performance-measurement-numericals.md) |
+| SMART KPIs and the five tests | Lectures 3, 10 📘 | [P4 Problem 13](p4-performance-measurement-numericals.md) |
+| Lecture 3 dashboard and balanced scorecard | Lectures 3, 10 📘 | [P4 Problems 3–4](p4-performance-measurement-numericals.md) |
+| ESG + RTI supplier criteria | Lecture 6 📘 | [Sustainable Procurement](ch03-sustainable-procurement.md) |
+| KPI formulas (OTIF, OEE, LTIFR, intensity) | 📗 | [P4 Formulas](p4-performance-measurement-numericals.md) |

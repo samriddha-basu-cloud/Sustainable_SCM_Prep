@@ -11,11 +11,11 @@
   var HIGH_YIELD = [
     { n: "★1", t: "CO3 Scope 1, 2, 3 numericals", d: "ICEV + EV plant (1,636 / 17,500 / Scope 3), GWP conversion, full inventory, BRSR data, carbon credits.", slug: "p2-carbon-accounting-numericals", a: "Automotive manufacturing" },
     { n: "★2", t: "CO4 network & logistics cost", d: "Network A/B/C switching λ, 10,000 returns, FMCG fleet CO₂, centre of gravity, load-distance, number of DCs.", slug: "p3-network-logistics-numericals", a: "" },
-    { n: "★3", t: "CO2 supplier weighted scoring", d: "Lecture 6 A/B/C model, VoltTech scorecard, TOPSIS, risk matrix, gate + score, Kraljic, TCO.", slug: "p1-supplier-selection-numericals", a: "Weighted Score Model" },
+    { n: "★3", t: "CO2 supplier weighted scoring", d: "Lecture 6 A/B/C model, VoltTech scorecard, laptop suppliers, gate + score, sensitivity.", slug: "p1-supplier-selection-numericals", a: "Weighted Score Model" },
     { n: "★4", t: "CO5 performance measurement", d: "OTIF, perfect order, OEE, intensity, LTIFR, Lecture 3 dashboard, BSC, TAS & Navya NTV.", slug: "p4-performance-measurement-numericals", a: "" },
     { n: "01", t: "Scope rules, GWPs & factors", d: "What you burn / buy / influence, 15 Scope 3 categories, Kyoto basket, MRV, net-zero hierarchy.", slug: "ch02-lca-carbon-footprints", a: "Scope 1, 2 and 3" },
     { n: "02", t: "Sustainable network model", d: "Nine nodes, objective Z = C + λE + μW, decision variables, constraints, four questions.", slug: "ch07-network-design", a: "closed-loop sustainable network model" },
-    { n: "03", t: "Supplier selection tools", d: "ESG + RTI criteria, weighted scoring, AHP, TOPSIS, DEA, LP, risk matrix.", slug: "ch03-sustainable-procurement", a: "Decision-making tools" },
+    { n: "03", t: "Supplier selection tools", d: "ESG + RTI criteria, weighted scoring (the exam method), TCO, AHP, DEA, LP, risk matrix.", slug: "ch03-sustainable-procurement", a: "Decision-making tools" },
     { n: "04", t: "KPI architecture & five tests", d: "KPI trap, leading vs lagging, BSC, SCOR + sustainability, material/balanced/actionable/comparable/credible.", slug: "ch08-performance-measurement", a: "The KPI architecture" },
     { n: "05", t: "Green & reverse logistics", d: "Modal shift, packaging cube, DHL levers, recovery hierarchy, collection networks.", slug: "ch06-sustainable-logistics", a: "Reverse logistics" },
     { n: "06", t: "Technology trade-offs (quiz)", d: "Technology ≠ sustainability, five trade-offs, decision matrix, TAS, Tech-Sustain, quality as sustainability.", slug: "ch05-technology-quality-tools", a: "The five hidden trade-offs" },
@@ -348,17 +348,17 @@
     var exam = NOTES.filter(function (n) { return n.group === "exam"; }).map(function (n) {
       var m = { "40": "PLAN", "10M": "10 MARKS", "7M": "7 MARKS", "3M": "3 MARKS" }[n.tag] || n.tag;
       var d = { "exam-focus": "The 40-mark paper, time split, answer template and the ten numbers to memorise.",
-        "e1-co3-carbon-10-markers": "Five 10-mark Scope 1-2-3 questions with marks split and model answers.",
-        "e2-co4-network-10-markers": "Six 10-mark network design questions: carbon price, location, mode, DCs, returns.",
-        "e3-co2-supplier-7-markers": "Six 7-mark supplier selection questions: weighted score, TOPSIS, gate + score, TCO.",
-        "e4-co5-performance-7-markers": "Six 7-mark KPI questions: OTIF, OEE, dashboards, scorecards, TAS, benchmarking.",
+        "e1-co3-carbon-10-markers": "Scope 1-2-3 for several scenarios, comparison table, scope-level and overall verdict, mitigation.",
+        "e2-co4-network-10-markers": "Six scenario cost comparisons in six parts: objective, variables, assumptions, total cost, choice, technology.",
+        "e3-co2-supplier-7-markers": "Six weighted-average supplier selections (no TOPSIS), each with a why-we-selected conclusion.",
+        "e4-co5-performance-7-markers": "Four supplier sustainability scorecards: added parameters, weights, KPI formulas, targets, actions.",
         "e5-co1-co6-3-markers": "34 short theory answers in 3-mark length for Lectures 1–3, 9 and 11." }[n.slug] || "";
       return '<a class="card glass exam-card' + (done[n.slug] ? " done" : "") + '" href="#/' + n.slug + '"><span class="k">' + esc(m) + '</span><span class="t">' + esc(n.label) + '</span><span class="d">' + esc(d) + "</span></a>";
     }).join("");
     var practice = [
       ["#/p2-carbon-accounting-numericals", "CO3", "Carbon Accounting Numericals", "Scope 1, 2, 3 for the ICEV + EV plant, GWPs, inventories, BRSR, credits."],
       ["#/p3-network-logistics-numericals", "CO4", "Network & Logistics Numericals", "Networks A/B/C, returns allocation, FMCG fleet, distance criteria, DC count."],
-      ["#/p1-supplier-selection-numericals", "CO2", "Supplier Weighted Scoring", "Weighted score, VoltTech scorecard, TOPSIS, risk matrix, AHP, Kraljic."],
+      ["#/p1-supplier-selection-numericals", "CO2", "Supplier Weighted Scoring", "Weighted score, VoltTech scorecard, laptop suppliers, scorecards (TOPSIS for background only)."],
       ["#/p4-performance-measurement-numericals", "CO5", "Performance Measurement Numericals", "OTIF, OEE, intensity, dashboards, BSC, TAS and Navya NTV."],
       ["#/p5-lca-energy-numericals", "LCA", "LCA & Energy Numericals", "Functional unit, LCC, EV vs ICE, WTW, EV forecast, battery end-of-life."],
       ["#/case-studies", "CASE", "Case Studies", "ITC eChoupal, Tesla batteries, BRSR, McKinsey and every lecture case."],
